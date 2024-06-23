@@ -1,84 +1,176 @@
 :root {
-    --card-background: #fff;
-    --divider-color: #d8d8d8;
-    --border: 1px solid #d8d8d8;
-    --primary-border: 1px solid #ff6250;
-    --light-background: #fff;
-    --dark-background: #3b3b3b;
-    --dark-onboarding-background: #2d2d2d;
-    --omniview-topbar-height: 70px;
-    --omniview-topbar-height-mobile: 50px;
-    --omniview-sidebar-width: 360px;
-    --top-bar-height: 60px;
-    --primary: #ff6250;
-    --secondary: #3b3b3b;
-    --tertiary: #d8d8d8;
-    --primary-darker: 
-color-mix(in srgb, var(--primary), #000 10%);
-    --primary-lighter: 
-color-mix(in srgb, var(--primary), #fff 10%);
-    --primary-hover: #e2412e;
-    --primary-text: #3b3b3b;
-    --secondary-text: rgba(59,59,59,0.4);
-    --white: #fff;
-    --light-container-background: #f7f7f7;
-    --green: #009379;
-    --pink: #f2bfaf;
-    --blue: #36f;
-    --dark-blue: #5d82f8;
-    --darker-blue: #2f3855;
-    --yellow: #f8d57e;
-    --purple: #bfaff2;
-    --red: #ff6250;
-    --green-light: 
-color-mix(in srgb, var(--green), #fff 20%);
-    --shadow: 0px 4px 12px rgba(59,59,59,0.1);
-    --slightly-stronger-shadow: 0px 4px 12px rgba(59,59,59,0.2);
-    --base-font: "Mulish", sans-serif;
-    --quirky-font: "Caveat", cursive;
-    --dark-primary-text: #fff;
-    --dark-secondary-text: hsla(0,0%,100%,0.4);
-    --dark-border-color: hsla(0,0%,100%,0.4);
-    --dark-border: 1px solid hsla(0,0%,100%,0.4);
-}
-html {
-    touch-action: manipulation;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-html {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    line-height: 1.5;
-}
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
-*, :after, :before {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: #e2e8f0;
-}
-html[Attributes Style] { -webkit-locale: "en";}
-user agent stylesheet
-:root {
-    view-transition-name: root;
-}
-user agent stylesheet
-html {
-    display: block;
-}
-*, :after, :before {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: #e2e8f0;
-}
-*, :after, :before {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: #e2e8f0;
+    /* VARIABLE COLLECTION */
+    --basics-white: #fefefe;
+    --basics-wite_m: #f4f2f2;
+    --basics-light-gray: #aca9a9;
+    --basics-dark_gray_medium: #5e5d5d;
+    --basics-dark_grey: #434242;
+    --basics-ultra_dark_grey: #333232;
+    --basics-black: #000000;
+
+    --logo-odoo_logo1: #a24689;
+    --logo-odoo_logo2: #8f8f8f;
+    --logo-html_logo1: #e44d26;
+    --logo-html_logo2: #ff6c39;
+    --logo-css_logo1: #1f62ae;
+    --logo-css2: #347dc6;
+    --logo-js_logo1: #f0db4f;
+    --logo-js_logo2: #323330;
+    --logo-jquery_logo1: #0769ad;
+    --logo-jquery_logo2: #78cff5;
+    --logo-qweb_logo1: #0d62ac;
+    --logo-qweb_logo2: #10a1e1;
+    --logo-qweb_logo3: #2b3f4d;
+    --logo-vsc_logo1-2: #56b4f4;
+    --logo-git_logo1: #ee513b;
+    --logo-linkedin_logo: #0a66c2;
+    --logo-github_logo: #24292f;
+    --logo-desoft_logo1: #396067;
+    --logo-desoft_logo2: #ac6f4c;
+    --logo-python_logo1: #275c87;
+    --logo-python_logo2: #347ab4;
+    --logo-python_logo3: #ffca1d;
+    --logo-python_logo4: #bf9816;
+    --logo-uci_logo: #04245f;
+    --logo-sololearn_logo_1: #374046;
+    --logo-sololearn_logo2: #3a3646;
+    --logo-sololearn_logo4: #45353a;
+    --logo-sololearn_logo3: #5f5344;
+    --logo-figma_logo1: #0acf83;
+    --logo-figma_logo2: #1abcfe;
+    --logo-figma_logo3: #a259ff;
+    --logo-figma_logo4: #f24e1e;
+    --logo-figma_logo5: #ff7262;
+    --logo-vsc_logo1: #0065a9;
+    --logo-vsc_logo2: #007acc;
+    --logo-vsc_log3: #1f9cf0;
+
+    --transparent-white80: rgba(254 254 254 / 0.8);
+    --transparent-black2: rgba(0 0 0 / 0.02);
+    --transparent-dark_blue98: rgba(1 5 20 / 0.98);
+    --transparent-black80: rgba(0 0 0 / 0.8);
+    --transparent-white2: rgba(255 255 255 / 0.02);
+    --transparent-dark_grey25: rgba(67 66 66 / 0.25);
+    --transparent-white98: rgba(254 254 254 / 0.98);
+
+
+    /* TEXT_TYPE */
+    --xl-reg-family: "Lexend";
+    --xl-reg-size: 20px;
+    --xl-reg-size-rem: 1.25rem;
+    --xl-reg-weight: 400;
+    --xl-reg-style: normal;
+    --s-reg-family: "Lexend";
+    --s-reg-size: 12px;
+    --s-reg-size-rem: 0.75rem;
+    --s-reg-weight: 400;
+    --s-reg-style: normal;
+    --m-reg-family: "Lexend";
+    --m-reg-size: 14px;
+    --m-reg-size-rem: 0.875rem;
+    --m-reg-weight: 400;
+    --m-reg-style: normal;
+    --m-bold-family: "Lexend";
+    --m-bold-size: 14px;
+    --m-bold-size-rem: 0.875rem;
+    --m-bold-weight: 700;
+    --m-bold-style: normal;
+    --s-light-family: "Lexend";
+    --s-light-size: 12px;
+    --s-light-size-rem: 0.75rem;
+    --s-light-weight: 300;
+    --s-light-style: normal;
+    --s-reg-family: "Lexend";
+    --s-reg-size: 12px;
+    --s-reg-size-rem: 0.75rem;
+    --s-reg-weight: 400;
+    --s-reg-style: normal;
+
+    /* GRADIENTS */
+    --python_gradient-stop-1-color: #347ab4;
+    --python_gradient-stop-1-position: 0%;
+    --python_gradient-stop-2-color: #ffca1d;
+    --python_gradient-stop-2-position: 45.9%;
+    --python_gradient-stop-3-color: #347ab4;
+    --python_gradient-stop-3-position: 90.1%;
+    --section_body_info_gradient-stop-1-color: rgba(254 254 254 / 0.5);
+    --section_body_info_gradient-stop-1-position: 0%;
+    --section_body_info_gradient-stop-2-color: rgba(254 254 254 / 0.8);
+    --section_body_info_gradient-stop-2-position: 50%;
+    --section_body_info_gradient-stop-3-color: rgba(254 254 254 / 0.5);
+    --section_body_info_gradient-stop-3-position: 100%;
+    --odoo_gradient-stop-1-color: #a24689;
+    --odoo_gradient-stop-1-position: 0%;
+    --odoo_gradient-stop-2-color: #8f8f8f;
+    --odoo_gradient-stop-2-position: 45.9%;
+    --odoo_gradient-stop-3-color: #821063;
+    --odoo_gradient-stop-3-position: 90.1%;
+    --python_gradient-stop-1-color: #347ab4;
+    --python_gradient-stop-1-position: 0%;
+    --python_gradient-stop-2-color: #ffca1d;
+    --python_gradient-stop-2-position: 45.9%;
+    --python_gradient-stop-3-color: #085391;
+    --python_gradient-stop-3-position: 90.1%;
+    --figma__gradient-stop-1-color: #0acf83;
+    --figma__gradient-stop-1-position: 0%;
+    --figma__gradient-stop-2-color: #ff7262;
+    --figma__gradient-stop-2-position: 45.9%;
+    --figma__gradient-stop-3-color: #049d62;
+    --figma__gradient-stop-3-position: 90.1%;
+    --vsc_logo_gradient25-stop-1-color: #ffffff;
+    --vsc_logo_gradient25-stop-1-position: 0%;
+    --vsc_logo_gradient25-stop-2-color: rgba(255 255 255 / 0);
+    --vsc_logo_gradient25-stop-2-position: 100%;
+    --vsc_gradient-stop-1-color: #3f8bbe;
+    --vsc_gradient-stop-1-position: 0%;
+    --vsc_gradient-stop-2-color: #56b4f4;
+    --vsc_gradient-stop-2-position: 45.9%;
+    --vsc_gradient-stop-3-color: #0968a7;
+    --vsc_gradient-stop-3-position: 90.1%;
+    --js_gradient-stop-1-color: #d8c64b;
+    --js_gradient-stop-1-position: 0%;
+    --js_gradient-stop-2-color: #323330;
+    --js_gradient-stop-2-position: 48%;
+    --js_gradient-stop-3-color: #ccb20a;
+    --js_gradient-stop-3-position: 100%;
+    --css_gradient-stop-1-color: #1f62ae;
+    --css_gradient-stop-1-position: 0%;
+    --css_gradient-stop-2-color: #347dc6;
+    --css_gradient-stop-2-position: 45.9%;
+    --css_gradient-stop-3-color: #06448b;
+    --css_gradient-stop-3-position: 90.1%;
+    --html_gradient-stop-1-color: #e44d26;
+    --html_gradient-stop-1-position: 0%;
+    --html_gradient-stop-2-color: #ff6c39;
+    --html_gradient-stop-2-position: 45.9%;
+    --html_gradient-stop-3-color: #e42626;
+    --html_gradient-stop-3-position: 90.1%;
+    --qweb_logo_gradient-stop-1-color: #0e1d2a;
+    --qweb_logo_gradient-stop-1-position: 0%;
+    --qweb_logo_gradient-stop-2-color: #324756;
+    --qweb_logo_gradient-stop-2-position: 100%;
+    --qweb_gradient-stop-1-color: #2b3f4d;
+    --qweb_gradient-stop-1-position: 0%;
+    --qweb_gradient-stop-2-color: #10a1e1;
+    --qweb_gradient-stop-2-position: 45.9%;
+    --qweb_gradient-stop-3-color: #1d445f;
+    --qweb_gradient-stop-3-position: 90.1%;
+    --jquery_gradient-stop-1-color: #0769ad;
+    --jquery_gradient-stop-1-position: 0%;
+    --jquery_gradient-stop-2-color: #78cff5;
+    --jquery_gradient-stop-2-position: 45.9%;
+    --jquery_gradient-stop-3-color: #054c7d;
+    --jquery_gradient-stop-3-position: 90.1%;
+    --git_gradient-stop-1-color: #ee513b;
+    --git_gradient-stop-1-position: 0%;
+    --git_gradient-stop-2-color: #ffaca2;
+    --git_gradient-stop-2-position: 45.9%;
+    --git_gradient-stop-3-color: #ce230b;
+    --git_gradient-stop-3-position: 90.1%;
+
+    /* SHADOWS */
+    --darkgray-shadow: 0 4px 4px 0 #434242;
+    --lightgray-shadow: 0 2px 2px 0 #aca9a9;
+    /* include glass effect */
+
 }
