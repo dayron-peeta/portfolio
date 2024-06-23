@@ -1,0 +1,84 @@
+:root {
+    --card-background: #fff;
+    --divider-color: #d8d8d8;
+    --border: 1px solid #d8d8d8;
+    --primary-border: 1px solid #ff6250;
+    --light-background: #fff;
+    --dark-background: #3b3b3b;
+    --dark-onboarding-background: #2d2d2d;
+    --omniview-topbar-height: 70px;
+    --omniview-topbar-height-mobile: 50px;
+    --omniview-sidebar-width: 360px;
+    --top-bar-height: 60px;
+    --primary: #ff6250;
+    --secondary: #3b3b3b;
+    --tertiary: #d8d8d8;
+    --primary-darker: 
+color-mix(in srgb, var(--primary), #000 10%);
+    --primary-lighter: 
+color-mix(in srgb, var(--primary), #fff 10%);
+    --primary-hover: #e2412e;
+    --primary-text: #3b3b3b;
+    --secondary-text: rgba(59,59,59,0.4);
+    --white: #fff;
+    --light-container-background: #f7f7f7;
+    --green: #009379;
+    --pink: #f2bfaf;
+    --blue: #36f;
+    --dark-blue: #5d82f8;
+    --darker-blue: #2f3855;
+    --yellow: #f8d57e;
+    --purple: #bfaff2;
+    --red: #ff6250;
+    --green-light: 
+color-mix(in srgb, var(--green), #fff 20%);
+    --shadow: 0px 4px 12px rgba(59,59,59,0.1);
+    --slightly-stronger-shadow: 0px 4px 12px rgba(59,59,59,0.2);
+    --base-font: "Mulish", sans-serif;
+    --quirky-font: "Caveat", cursive;
+    --dark-primary-text: #fff;
+    --dark-secondary-text: hsla(0,0%,100%,0.4);
+    --dark-border-color: hsla(0,0%,100%,0.4);
+    --dark-border: 1px solid hsla(0,0%,100%,0.4);
+}
+html {
+    touch-action: manipulation;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e2e8f0;
+}
+html[Attributes Style] { -webkit-locale: "en";}
+user agent stylesheet
+:root {
+    view-transition-name: root;
+}
+user agent stylesheet
+html {
+    display: block;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e2e8f0;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e2e8f0;
+}
