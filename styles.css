@@ -54,27 +54,6 @@
     --transparent-dark_grey25: rgba(67 66 66 / 0.25);
     --transparent-white98: rgba(254 254 254 / 0.98);
 
-
-    /* TEXT_TYPE */
-    --font-family-lexend: "Lexend", Helvetica;
-
-    --font-style: normal;
-
-    --font-size-m: 12px;
-    --font-size-l: 14px;
-    --font-size-xl: 16px;
-    --font-size-xxl: 20px;
-
-    --font-size-m-rem: 0.75rem;
-    --font-size-l-rem: 0.875rem;
-    --font-size-xl-rem: 1rem;
-    --font-size-xxl-rem: 1.25rem;
-
-    --font-weight-light: 300;
-    --font-weight-reg: 400;
-    --font-weight-bold: 700;
-
-
     /* GRADIENTS */
     --python_gradient-stop-1-color: #347ab4;
     --python_gradient-stop-1-position: 0%;
@@ -158,91 +137,120 @@
     --git_gradient-stop-3-position: 90.1%;
 
     /* SHADOWS */
-    --darkgray-shadow: 0 4px 4px 0 #434242;
-    --lightgray-shadow: 0 2px 2px 0 #aca9a9;
+    --darkgray-shadow: 0 4px 4px 0 var(--basics-dark_grey);
+    --lightgray-shadow: 0 2px 2px 0 var(--basics-light-gray);
 
-    /* GLASS EFFECT //TODO */ 
+    /* GLASS EFFECT BLUR*/ 
+    --glass: blur(8px) brightness(100%);
+    --glass-2: blur(12px) brightness(100%);
+    /* GLASS EFFECT SHADOW*/ 
+    --glass-shadow: 0 1px 3px 0 #aca9a9;
 
+    /* TEXT_TYPE */
+    --font-family-lexend: "Lexend", Helvetica;
+
+    --font-style-normal: normal;
+
+    --font-size-m: 12px;
+    --font-size-l: 14px;
+    --font-size-xl: 16px;
+    --font-size-xxl: 20px;
+
+    --font-size-m-rem: 0.75rem;
+    --font-size-l-rem: 0.875rem;
+    --font-size-xl-rem: 1rem;
+    --font-size-xxl-rem: 1.25rem;
+
+    --font-weight-light: 300;
+    --font-weight-reg: 400;
+    --font-weight-bold: 700;
+}
+
+.xxl-reg {
+    font-family: var(--font-family-lexend);
+    font-size: var(--font-size-xxl);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-reg);
 }
 
 .xl-reg {
     font-family: var(--font-family-lexend);
-    font-size: var(--font-size-xxl);
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0px;
+    font-size: var(--font-size-xl);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-reg);
 }
 
-.s-reg {
+.l-bold {
     font-family: var(--font-family-lexend);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0px;
+    font-size: var(--font-size-l);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-bold);
+}
+
+.l-reg {
+    font-family: var(--font-family-lexend);
+    font-size: var(--font-size-l);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-reg);
 }
 
 .m-reg {
     font-family: var(--font-family-lexend);
-    font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0px;
+    font-size: var(--font-size-m);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-reg);
 }
 
-.m-bold {
-    font-family: var(--font-family-lexend);
-    font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0px;
-}
-
-.s-light {
+.m-light {
     font-family: var(--font-family-lexend);
     font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 300;
-    letter-spacing: 0px;
-}
-
-.lexend-normal-basics-dark_grey-16px {
-    color: var(--basics-dark_grey);
-    font-family: var(--font-family-lexend);
-    font-size: var(--font-size-xl);
-    font-style: normal;
-    font-weight: 400;
-}
-
-.lexend-normal-basics-light-gray-14px {
-    color: var(--basics-light-gray);
-    font-family: var(--font-family-lexend);
-    font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 400;
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-light);
 }
 
 * {
     box-sizing: border-box;
 }
 
-/* screen - main */
+body{
+    margin: 0px; 
+    background: var(--basics-white);
+    overflow-x: hidden;
+}
 
+
+/* screen - main */
 .main {
     align-items: center;
+    padding: 24px 8px;
+    gap: 16px;
     background-color: var(--basics-white);
     display: flex;
     flex-direction: column;
-    gap: 16px;
     justify-content: center;
-    left: 0px;
     overflow: hidden;
     overflow-x: hidden;
-    padding: 24px 8px;
     position: relative;
     top: 0px;
+    left: 0px;
+
+    font-family: Arial, sans-serif; /* Estilo de fuente por defecto */
 }
 
-.main .vector-aWWDPv {
+/* .main::before {
+    
+    position: absolute;
+    width: 250px;
+    height: 753.06px;
+    background-image: url(./statics/background_vector.svg);    background-size: cover;
+    transform: rotate(45deg);
+    left: 92.24px;
+    top: 381.81px;
+} */
+
+/* //TODO voy por aquí */
+
+.main .background_vector {
     background-color: transparent;
     height: 636px;
     left: 3px;
@@ -251,26 +259,25 @@
     width: 506px;
 }
 
-.main .headerlight-aWWDPv {
-    -webkit-backdrop-filter: blur(8px) brightness(100%);
+/* .main .header {
+    -webkit-backdrop-filter: var(--glass-2);
+    backdrop-filter: var(--glass-2);
     align-items: center;
     align-self: stretch;
-    backdrop-filter: blur(8px) brightness(100%);
-    background-color: #fdfdfdfa;
+    background-color: var(--transparent-white98);
     border-radius: 20px;
-    box-shadow: 0px 1px 3px #aca9a966;
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    gap: 12px;
     justify-content: center;
     min-width: 304px;
     padding: 8px 16px;
+    gap: 12px;
     position: relative;
     width: 100%;
 }
 
-.main .about_me-Sy3MRJ {
+.main .about_me {
     align-items: center;
     align-self: stretch;
     background-color: transparent;
@@ -283,23 +290,25 @@
     width: 100%;
 }
 
-.main .picture-N7Hc29 {
+.main .header_picture {
     align-items: center;
-    box-shadow: 0px 2px 2px #aca9a9;
     display: flex;
     gap: 10px;
     height: 100px;
     justify-content: space-around;
     width: 100px;
+    
 }
 
-.main .picture-BFJd7d {
+.main .img {
     height: 90px;
     object-fit: cover;
     width: 90px;
+    box-shadow: var(--lightgray-shadow);
+    border-radius: 50px;
 }
 
-.main .info-N7Hc29 {
+.main .header_info {
     align-items: flex-start;
     display: flex;
     flex: 1;
@@ -309,7 +318,7 @@
     min-width: 164px;
 }
 
-.main .frame-3-4X5Qmz {
+.main .header_info_f1 {
     align-items: flex-end;
     background-color: transparent;
     display: inline-flex;
@@ -355,7 +364,7 @@
 
 .main .odoo-developer-and-uiux-designer-CI24Yp {
     background-color: transparent;
-    color: var(--basics-light-gray);
+    color: var(--basicm-light-gray);
     flex: 1;
     font-style: normal;
     font-weight: 300;
@@ -365,7 +374,7 @@
     text-align: left;
 }
 
-.main .frame-4-4X5Qmz {
+.main .header_info_f2 {
     align-items: center;
     background-color: transparent;
     display: flex;
@@ -420,7 +429,7 @@
 
 .main .linkedin-7Vj07o {
     background-color: transparent;
-    color: var(--basics-light-gray);
+    color: var(--basicm-light-gray);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -437,7 +446,7 @@
 
 .main .github-HXIafB {
     background-color: transparent;
-    color: var(--basics-light-gray);
+    color: var(--basicm-light-gray);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -469,7 +478,225 @@
     margin-top: -1.00px;
     position: relative;
     text-align: left;
+} */
+
+
+/* ***************************HEADER******************************* */
+.main .header {
+    -webkit-backdrop-filter: var(--glass-2);
+    backdrop-filter: var(--glass-2);
+    align-items: center;
+    align-self: stretch;
+    background-color: var(--transparent-white98);
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 304px;
+    padding: 8px 16px;
+    gap: 12px;
+    position: relative;
+    width: 100%;
 }
+
+.main .header__about-me {
+    align-items: center;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.main .header__picture {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.main .header__picture-img {
+    height: 90px;
+    object-fit: cover;
+    width: 90px;
+    box-shadow: var(--lightgray-shadow);
+    border-radius: 50px;
+}
+
+.main .header__info {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+    min-width: 164px;
+}
+
+.main .header__info-f1 {
+    align-items: flex-end;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    min-width: 164px;
+    position: relative;
+}
+
+.main .header__info-name {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+    width: 164px;
+}
+
+.main .header__info-name-title {
+    background-color: transparent;
+    color: var(--basics-black);
+    flex: 1;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+}
+
+.main .header__info-role {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 18px;
+    position: relative;
+    width: 164px;
+}
+
+.main .header__info-role-text {
+    background-color: transparent;
+    color: var(--basics-light-gray);
+    flex: 1;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+}
+
+.main .header__info-f2 {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+    justify-content: center;
+    min-width: 164px;
+    position: relative;
+}
+
+.main .header__info-titulation {
+    align-items: center;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.main .header__info-titulation-title {
+    background-color: transparent;
+    color: var(--basics-dark_grey);
+    flex: 1;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+}
+
+.main .header__info-contact {
+    align-items: center;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+}
+
+.main .header__info-contact-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.main .header__info-contact-linkedin {
+    background-color: transparent;
+    color: var(--basics-light-gray);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -0.50px;
+    position: relative;
+    text-align: left;
+    width: fit-content;
+}
+
+.main .header__info-contact-github {
+    background-color: transparent;
+    color: var(--basics-light-gray);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -0.50px;
+    position: relative;
+    text-align: left;
+    width: fit-content;
+}
+
+.main .header__description {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 10px;
+    justify-content: center;
+    min-width: 272px;
+    position: relative;
+}
+
+.main .header__description-text {
+    background-color: transparent;
+    color: var(--basics-dark_grey);
+    flex: 1;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+}
+/* ********************************************************************** */
 
 .main .body-aWWDPv {
     align-items: center;
@@ -1116,6 +1343,7 @@
 }
 
 .main .certifications {
+    color: var(--basics-light-gray);
     background-color: transparent;
     letter-spacing: 4.20px;
     line-height: normal;
@@ -1239,7 +1467,8 @@
     width: 134px;
 }
 
-.main .python {
+.main .icon_text {
+    color: var(--basics-dark_grey);
     background-color: transparent;
     letter-spacing: 0.00px;
     line-height: normal;
