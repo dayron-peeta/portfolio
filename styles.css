@@ -225,7 +225,7 @@ body{
     align-items: center;
     padding: 24px 8px;
     gap: 40px;
-    background-color: var(--basics-white);
+    background-color: transparent;;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,10 +254,15 @@ body{
 .main .background_vector {
     background-color: transparent;
     height: 636px;
-    left: 3px;
-    position: absolute;
-    top: 210px;
     width: 506px;
+
+    left: 3px;
+    top: 210px;
+    
+
+    position: fixed;
+    
+    z-index: -20;
 }
 
 /* ***************************HEADER******************************* */
