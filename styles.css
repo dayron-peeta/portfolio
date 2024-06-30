@@ -209,6 +209,10 @@
     font-weight: var(--font-weight-light);
 }
 
+html{
+    scroll-behavior: smooth;
+    sc
+}
 * {
     box-sizing: border-box;
 }
@@ -376,8 +380,10 @@ body{
     font-weight: 300;
     line-height: normal;
     margin-top: -1.00px;
+    margin-bottom: 0px;
     position: relative;
     text-align: left;
+
 }
 
 .main .header__info-f2 {
