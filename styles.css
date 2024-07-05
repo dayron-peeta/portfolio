@@ -3,72 +3,102 @@
         }
 
         :root {
-          --black: #000000;
-          --cape-cod: #424141;
-          --coconut: #fdfdfd;
-          --coconut-2: #fdfdfdcc;
-          --mine-shaft: #323232;
+          /* COLORS */
+          --basics-dark_grey: #434242;
+          --basics-white2: #f2f3fa;
+          --basics-black: #05070b;
+          --basics-white: #fefefe;
+          --basics-ultra_dark_grey: #333232;
+          --basics-wite_m: #f4f2f2;
 
-          --font-size-l: 14px;
+          --transparent-dark_grey25: rgba(67 66 66 / 0.25);
+          --transparent-black1: rgba(0 0 0 / 0.01);
+          --transparent-black80: rgba(0 0 0 / 0.8);
+          --transparent-white2: rgba(255 255 255 / 0.02);
+          --transparent-black20: rgba(0 0 0 / 0.2);
+          --transparent-black30: rgba(0 0 0 / 0.3);
+          --transparent-white80: rgba(254 254 254 / 0.8);
+          --transparent-dark_blue98: rgba(1 5 20 / 0.98);
+
+          /* SHADOWS */
+          --shadow_black30: 1px 2px 2px 0px var(--transparent-black30);
+
+          /* GLASS EFFECT BLUR*/
+          --glas8: blur(8px) brightness(100%);
+          --glas18: blur(18px) brightness(100%);
+          --glas22: blur(22px) brightness(100%);
+
+          /* GLASS EFFECT SHADOW*/
+          --glass18-shadow: 0.2px 0.2px 1.2px 0px var(--transparent-black20);
+
+          /* TEXT_TYPE */
+          --font-family-lexend: "Lexend", Helvetica;
+
+          --font-style-normal: normal;
+
           --font-size-m: 12px;
+          --font-size-l: 14px;
           --font-size-xl: 16px;
           --font-size-xxl: 20px;
 
-          --font-family-lexend: "Lexend", Helvetica;
+          --font-size-m-rem: 0.75rem;
+          --font-size-l-rem: 0.875rem;
+          --font-size-xl-rem: 1rem;
+          --font-size-xxl-rem: 1.25rem;
+
+          --font-weight-light: 300;
+          --font-weight-reg: 400;
+          --font-weight-bold: 700;
         }
 
         .xxl-reg {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-xxl);
-          font-style: normal;
-          font-weight: 400;
-          letter-spacing: 0px;
-        }
-
-        .xl-reg {
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-reg);
+      }
+      
+      .xl-reg {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-xl);
-          font-style: normal;
-          font-weight: 400;
-          letter-spacing: 0px;
-        }
-
-        .l-bold {
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-reg);
+      }
+      
+      .l-bold {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-l);
-          font-style: normal;
-          font-weight: 700;
-          letter-spacing: 0px;
-        }
-
-        .l-reg {
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-bold);
+      }
+      
+      .l-reg {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-l);
-          font-style: normal;
-          font-weight: 400;
-          letter-spacing: 0px;
-        }
-
-        .m-reg {
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-reg);
+      }
+      
+      .m-reg {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-m);
-          font-style: normal;
-          font-weight: 400;
-          letter-spacing: 0px;
-        }
-
-        .m-light {
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-reg);
+      }
+      
+      .m-light {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-m);
-          font-style: normal;
-          font-weight: 300;
-          letter-spacing: 0px;
-        }
-
-        
-
-        
-
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-light);
+      }
+      
+      .section-name {
+          font-family: var(--font-family-lexend);
+          font-size: var(--font-size-xl);
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-reg);
+      }
 
         /* screen - pc768-1440 */
 
@@ -79,10 +109,10 @@
           font-weight: 400;
           letter-spacing: 4.8px;
         }
-        
+
         .pc768-1440 {
           align-items: center;
-          background-color: var(--coconut);
+          background-color: var(--basics-white);
           display: flex;
           flex-direction: column;
           gap: 32px;
@@ -107,11 +137,11 @@
         }
 
         .pc768-1440 .header-3iiRca {
-          -webkit-backdrop-filter: blur(22px) brightness(100%);
+          -webkit-backdrop-filter: var(--glas22);
           align-items: center;
           align-self: stretch;
-          backdrop-filter: blur(22px) brightness(100%);
-          background-color: var(--coconut-2);
+          backdrop-filter: var(--glas22);
+          background-color: var(--transparent-white80);
           border-radius: 20px;
           display: flex;
           flex: 0 0 auto;
@@ -161,11 +191,10 @@
         }
 
         .pc768-1440 .about-me__img-mEGphz {
+          box-shadow: var(--shadow_black30);
+          border-radius: 50px;
           background-color: transparent;
           height: 94px;
-          margin-bottom: -4.00px;
-          margin-left: -1.00px;
-          margin-right: -3.00px;
           object-fit: cover;
           position: relative;
           width: 94px;
@@ -187,7 +216,7 @@
 
         .pc768-1440 .about-me__name-XrbLL4 {
           background-color: transparent;
-          color: #05060b;
+          color: var(--basics-black);
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -198,7 +227,7 @@
 
         .pc768-1440 .about-me__role-XrbLL4 {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           font-style: normal;
           font-weight: 300;
           line-height: normal;
@@ -209,7 +238,7 @@
 
         .pc768-1440 .about-me__degree-XrbLL4 {
           background-color: transparent;
-          color: #05060b;
+          color: var(--basics-black);
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -232,7 +261,7 @@
 
         .pc768-1440 .about-me__description-text-z6Effs {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           flex: 1;
           font-style: normal;
           font-weight: 400;
@@ -255,11 +284,11 @@
         }
 
         .pc768-1440 .sections-3iiRca {
-          -webkit-backdrop-filter: blur(8px) brightness(100%);
+          -webkit-backdrop-filter: var(--glas8);
           align-items: flex-start;
           align-self: stretch;
-          backdrop-filter: blur(8px) brightness(100%);
-          background-color: #ffffff05;
+          backdrop-filter: var(--glas8);
+          background-color: var(--transparent-black1);
           border-radius: 20px;
           display: flex;
           flex: 0 0 auto;
@@ -302,7 +331,7 @@
           flex-grow: 1;
         }
 
-        .pc768-1440 .certificarion__degree-date-XejEPL {
+        .pc768-1440 .certification__degree-date-XejEPL {
           margin-top: -1.00px;
         }
 
@@ -367,7 +396,7 @@
 
         .pc768-1440 .certification__company-name-xU1IDg {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -544,11 +573,11 @@
         }
 
         .pc768-1440 .footer-3iiRca {
-          -webkit-backdrop-filter: blur(22px) brightness(100%);
+          -webkit-backdrop-filter: var(--glas22);
           align-items: center;
           align-self: stretch;
-          backdrop-filter: blur(22px) brightness(100%);
-          background-color: var(--coconut-2);
+          backdrop-filter: var(--glas22);
+          background-color: var(--transparent-white80);
           display: flex;
           flex: 0 0 auto;
           flex-direction: column;
@@ -564,7 +593,7 @@
         .pc768-1440 .footer__text-ew1d9x {
           align-self: stretch;
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -608,7 +637,7 @@
 
         .pc768-1440 .about-me__contact-text {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           font-style: normal;
           font-weight: 300;
           line-height: normal;
@@ -646,7 +675,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .certificarion__degree {
+        .pc768-1440 .certification__degree {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -659,38 +688,9 @@
           width: 100%;
         }
 
-        .pc768-1440 .certificarion__degree-date {
-          background-color: transparent;
-          color: var(--cape-cod);
-          font-style: normal;
-          font-weight: 300;
-          line-height: normal;
-          position: relative;
-          text-align: left;
-          width: fit-content;
-        }
-
-        .pc768-1440 .certificarion__degree-icon {
-          background-color: transparent;
-          height: 24px;
-          position: relative;
-          width: 24px;
-        }
-
-        .pc768-1440 .certificarion__degree-text {
-          background-color: transparent;
-          color: var(--cape-cod);
-          flex: 1;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          position: relative;
-          text-align: left;
-        }
-
         .pc768-1440 .certification__degree-date {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           font-style: normal;
           font-weight: 300;
           line-height: normal;
@@ -708,7 +708,36 @@
 
         .pc768-1440 .certification__degree-text {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
+          flex: 1;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          position: relative;
+          text-align: left;
+        }
+
+        .pc768-1440 .certification__degree-date {
+          background-color: transparent;
+          color: var(--basics-dark_grey);
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          position: relative;
+          text-align: left;
+          width: fit-content;
+        }
+
+        .pc768-1440 .certification__degree-icon {
+          background-color: transparent;
+          height: 24px;
+          position: relative;
+          width: 24px;
+        }
+
+        .pc768-1440 .certification__degree-text {
+          background-color: transparent;
+          color: var(--basics-dark_grey);
           flex: 1;
           font-style: normal;
           font-weight: 700;
@@ -738,7 +767,7 @@
 
         .pc768-1440 .certification__institution-name {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           flex: 1;
           font-style: normal;
           font-weight: 400;
@@ -763,7 +792,7 @@
         .pc768-1440 .project__description {
           align-self: stretch;
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           flex: 1;
           font-style: normal;
           font-weight: 300;
@@ -820,7 +849,7 @@
         .pc768-1440 .project__name {
           align-self: stretch;
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           flex: 1;
           font-style: normal;
           font-weight: 700;
@@ -832,7 +861,7 @@
 
         .pc768-1440 .project__tech {
           align-items: center;
-          background-color: var(--mine-shaft);
+          background-color: var(--basics-ultra_dark_grey);
           border-radius: 30px;
           display: flex;
           flex: 1;
@@ -845,7 +874,7 @@
 
         .pc768-1440 .project__tech-text {
           background-color: transparent;
-          color: var(--coconut);
+          color: var(--basics-white);
           font-style: normal;
           font-weight: 300;
           line-height: normal;
@@ -881,11 +910,11 @@
         }
 
         .pc768-1440 .section__card {
-          -webkit-backdrop-filter: blur(18px) brightness(100%);
-          backdrop-filter: blur(18px) brightness(100%);
-          background-color: var(--coconut-2);
+          -webkit-backdrop-filter: var(--glas18);
+          backdrop-filter: var(--glas18);
+          background-color: var(--transparent-white80);
           border-radius: 20px;
-          box-shadow: 0.20000000298023224px 0.20000000298023224px 1.2000000476837158px #00000033;
+          box-shadow: var(--glass18-shadow);
           display: flex;
           flex-direction: column;
           gap: 8px;
@@ -897,7 +926,7 @@
 
         .pc768-1440 .section__title {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -937,12 +966,12 @@
         }
 
         .pc768-1440 .section_header__f2 {
-          -webkit-backdrop-filter: blur(18px) brightness(100%);
+          -webkit-backdrop-filter: var(--glas18);
           align-items: center;
-          backdrop-filter: blur(18px) brightness(100%);
-          background-color: var(--coconut-2);
+          backdrop-filter: var(--glas18);
+          background-color: var(--transparent-white80);
           border-radius: 20px;
-          box-shadow: 0.20000000298023224px 0.20000000298023224px 1.2000000476837158px #00000033;
+          box-shadow: var(--glass18-shadow);
           display: inline-flex;
           flex: 0 0 auto;
           flex-direction: column;
@@ -970,12 +999,12 @@
         }
 
         .pc768-1440 .tech__back {
-          -webkit-backdrop-filter: blur(18px) brightness(100%);
+          -webkit-backdrop-filter: var(--glas18);
           align-items: center;
-          backdrop-filter: blur(18px) brightness(100%);
-          background-color: var(--coconut);
+          backdrop-filter: var(--glas18);
+          background-color: var(--basics-white);
           border-radius: 30px;
-          box-shadow: 0.20000000298023224px 0.20000000298023224px 1.2000000476837158px #00000033;
+          box-shadow: var(--glass18-shadow);
           display: inline-flex;
           flex: 0 0 auto;
           flex-direction: column;
@@ -999,7 +1028,7 @@
 
         .pc768-1440 .tech__name {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           font-style: normal;
           font-weight: 400;
           line-height: normal;
