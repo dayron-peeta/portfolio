@@ -100,6 +100,13 @@
           font-weight: var(--font-weight-reg);
       }
 
+      body {
+        margin: 0px;
+        background: var(--basics-white);
+        overflow-x: hidden;
+        align-items: center;
+    }
+
         /* screen - pc768-1440 */
 
         .section-name {
