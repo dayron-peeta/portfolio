@@ -56,76 +56,69 @@
           font-size: var(--font-size-xxl);
           font-style: var(--font-style-normal);
           font-weight: var(--font-weight-reg);
-      }
-      
-      .xl-reg {
+        }
+
+        .xl-reg {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-xl);
           font-style: var(--font-style-normal);
           font-weight: var(--font-weight-reg);
-      }
-      
-      .l-bold {
+        }
+
+        .l-bold {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-l);
           font-style: var(--font-style-normal);
           font-weight: var(--font-weight-bold);
-      }
-      
-      .l-reg {
+        }
+
+        .l-reg {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-l);
           font-style: var(--font-style-normal);
           font-weight: var(--font-weight-reg);
-      }
-      
-      .m-reg {
+        }
+
+        .m-reg {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-m);
           font-style: var(--font-style-normal);
           font-weight: var(--font-weight-reg);
-      }
-      
-      .m-light {
+        }
+
+        .m-light {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-m);
           font-style: var(--font-style-normal);
           font-weight: var(--font-weight-light);
-      }
-      
-      .section-name {
-          font-family: var(--font-family-lexend);
-          font-size: var(--font-size-xl);
-          font-style: var(--font-style-normal);
-          font-weight: var(--font-weight-reg);
-      }
-
-      body {
-        margin: 0px;
-        background: var(--basics-white);
-        overflow-x: hidden;
-        align-items: center;
-    }
-
-        /* screen - pc768-1440 */
+        }
 
         .section-name {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-xl);
-          font-style: normal;
-          font-weight: 400;
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-reg);
           letter-spacing: 4.8px;
         }
 
-        .pc768-1440 {
+        body {
+          margin: 0px;
+          background: var(--basics-white);
+          overflow-x: hidden;
+          font-family: var(--font-family-lexend);
+        }
+
+        /* screen - main */
+
+
+        .main {
           align-items: center;
-          background-color: var(--basics-white);
+          background-color: transparent;
           display: flex;
           flex-direction: column;
           gap: 32px;
           justify-content: center;
           left: 0px;
-          max-width: 1440px;
           min-width: 786px;
           overflow: hidden;
           overflow-x: hidden;
@@ -134,20 +127,25 @@
           top: 0px;
         }
 
-        .pc768-1440 .page__background-vector-3iiRca {
+        .main .page__background-vector {
           background-color: transparent;
-          height: 907px;
-          left: 690px;
-          position: absolute;
-          top: 59px;
+          height: 1632px;
+          left: 705px;
+          position: fixed;
+          top: -310px;
           width: 605px;
+          z-index: -20;
+          /* transform: rotate(45deg); */
         }
 
-        .pc768-1440 .header-3iiRca {
+
+        /* ***************************HEADER******************************* */
+        .main .header {
           -webkit-backdrop-filter: var(--glas22);
-          align-items: center;
-          align-self: stretch;
           backdrop-filter: var(--glas22);
+          align-items: center;
+          align-content: center;
+          align-self: center;
           background-color: var(--transparent-white80);
           border-radius: 20px;
           display: flex;
@@ -162,7 +160,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .header__about-me-0BVakT {
+        .main .header__about-me {
           align-items: flex-end;
           align-self: stretch;
           background-color: transparent;
@@ -175,7 +173,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .about-me__f1-AgSQEg {
+        .main .about-me__f1 {
           align-items: center;
           background-color: transparent;
           display: inline-flex;
@@ -186,7 +184,7 @@
           position: relative;
         }
 
-        .pc768-1440 .about-me__picture-M9SMV5 {
+        .main .about-me__picture {
           align-items: center;
           background-color: transparent;
           display: flex;
@@ -197,7 +195,7 @@
           width: 90px;
         }
 
-        .pc768-1440 .about-me__img-mEGphz {
+        .main .about-me__img {
           box-shadow: var(--shadow_black30);
           border-radius: 50px;
           background-color: transparent;
@@ -207,7 +205,7 @@
           width: 94px;
         }
 
-        .pc768-1440 .about-me__f2-M9SMV5 {
+        .main .about-me__f2 {
           align-items: flex-start;
           align-self: stretch;
           background-color: transparent;
@@ -221,7 +219,7 @@
           position: relative;
         }
 
-        .pc768-1440 .about-me__name-XrbLL4 {
+        .main .about-me__name {
           background-color: transparent;
           color: var(--basics-black);
           font-style: normal;
@@ -232,7 +230,7 @@
           width: fit-content;
         }
 
-        .pc768-1440 .about-me__role-XrbLL4 {
+        .main .about-me__role {
           background-color: transparent;
           color: var(--basics-dark_grey);
           font-style: normal;
@@ -243,7 +241,7 @@
           width: fit-content;
         }
 
-        .pc768-1440 .about-me__degree-XrbLL4 {
+        .main .about-me__degree  {
           background-color: transparent;
           color: var(--basics-black);
           font-style: normal;
@@ -254,7 +252,7 @@
           width: fit-content;
         }
 
-        .pc768-1440 .about-me__description-AgSQEg {
+        .main .about-me__description   {
           align-items: center;
           background-color: transparent;
           display: flex;
@@ -266,7 +264,7 @@
           position: relative;
         }
 
-        .pc768-1440 .about-me__description-text-z6Effs {
+        .main .about-me__description-text  {
           background-color: transparent;
           color: var(--basics-dark_grey);
           flex: 1;
@@ -278,7 +276,7 @@
           text-align: left;
         }
 
-        .pc768-1440 .about-me__contacts-AgSQEg {
+        .main .about-me__contacts   {
           align-items: center;
           background-color: transparent;
           display: inline-flex;
@@ -290,10 +288,11 @@
           position: relative;
         }
 
-        .pc768-1440 .sections-3iiRca {
+        /* ***************************SECTIONS******************************* */
+        .main .sections  {
           -webkit-backdrop-filter: var(--glas8);
           align-items: flex-start;
-          align-self: stretch;
+          align-self: center;
           backdrop-filter: var(--glas8);
           background-color: var(--transparent-black1);
           border-radius: 20px;
@@ -309,40 +308,50 @@
           width: 100%;
         }
 
-        .pc768-1440 .section-Nsdlyj {
-          min-width: 754px;
+        .main .section-certifications {
+          min-width: 638px;
         }
 
-        .pc768-1440 .section_body-l99nC1 {
+        .main .section_body-certifications {
           align-items: flex-start;
           flex-wrap: wrap;
           gap: 16px 16px;
           justify-content: center;
         }
+        
+        .main .certifications__f1 {
+          align-items: flex-start;
+          flex-wrap: wrap;
+          gap: 16px 16px;
+          justify-content: center;
+          min-width: 296px;
+          flex-grow: 1;
+        }
 
-        .pc768-1440 .section__card-WaGEnS {
+        .main .section__card-WaGEnS {
           align-items: flex-start;
           flex: 1;
           flex-grow: 1;
         }
 
-        .pc768-1440 .section__card-cvk1ge {
+        .main .section__card-cvk1ge {
           align-items: flex-start;
           flex: 1;
           flex-grow: 1;
         }
 
-        .pc768-1440 .section__card-GxBCfr {
+        .main .section__card-GxBCfr {
           align-items: flex-start;
           flex: 1;
           flex-grow: 1;
+
         }
 
-        .pc768-1440 .certification__degree-date-XejEPL {
+        .main .certification__degree-date-XejEPL {
           margin-top: -1.00px;
         }
 
-        .pc768-1440 .card__degree-0gnyH1 {
+        .main .card__degree-0gnyH1 {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -355,24 +364,24 @@
           width: 100%;
         }
 
-        .pc768-1440 .section-oHm5U3 {
+        .main .section-oHm5U3 {
           min-width: 304px;
         }
 
-        .pc768-1440 .section_body-lAscOp {
+        .main .section_body-lAscOp {
           align-items: flex-start;
           flex-wrap: wrap;
           gap: 16px 16px;
           justify-content: center;
         }
 
-        .pc768-1440 .section__card-Lhcjo6 {
+        .main .section__card-Lhcjo6 {
           align-items: center;
           flex: 1;
           flex-grow: 1;
         }
 
-        .pc768-1440 .card__experience-nDjm12 {
+        .main .card__experience-nDjm12 {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -385,7 +394,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .experience__company-zc9L1q {
+        .main .experience__company-zc9L1q {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -396,12 +405,12 @@
           width: 100%;
         }
 
-        .pc768-1440 .icons-xU1IDg {
+        .main .icons-xU1IDg {
           height: 28px;
           width: 28px;
         }
 
-        .pc768-1440 .certification__company-name-xU1IDg {
+        .main .certification__company-name-xU1IDg {
           background-color: transparent;
           color: var(--basics-dark_grey);
           font-style: normal;
@@ -412,7 +421,7 @@
           width: fit-content;
         }
 
-        .pc768-1440 .certification__degree-zc9L1q {
+        .main .certification__degree-zc9L1q {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -425,55 +434,55 @@
           width: 100%;
         }
 
-        .pc768-1440 .section-PSojmK {
+        .main .section-PSojmK {
           max-width: 1434px;
           min-width: 754px;
         }
 
-        .pc768-1440 .section_body-dQDVSo {
+        .main .section_body-dQDVSo {
           align-items: flex-start;
           flex-wrap: wrap;
           gap: 16px 16px;
           justify-content: center;
         }
 
-        .pc768-1440 .section__card-h7CIne {
+        .main .section__card-h7CIne {
           align-items: flex-start;
           flex: 1;
           flex-grow: 1;
         }
 
-        .pc768-1440 .section__card-KySWJS {
+        .main .section__card-KySWJS {
           align-items: flex-start;
           flex: 1;
           flex-grow: 1;
         }
 
-        .pc768-1440 .section__card-DomEPQ {
+        .main .section__card-DomEPQ {
           align-items: center;
           flex: 1;
           flex-grow: 1;
         }
 
-        .pc768-1440 .section-QKH3sU {
+        .main .section-QKH3sU {
           max-width: 1434px;
           min-width: 754px;
         }
 
-        .pc768-1440 .section_body-jvfWA6 {
+        .main .section_body-jvfWA6 {
           align-items: center;
           flex-direction: column;
           gap: 16px;
         }
 
-        .pc768-1440 .section__card-TjDe1S {
+        .main .section__card-TjDe1S {
           align-items: center;
           align-self: stretch;
           flex: 0 0 auto;
           width: 100%;
         }
 
-        .pc768-1440 .card__tecks-1zGCVa {
+        .main .card__tecks-1zGCVa {
           align-items: flex-start;
           align-self: stretch;
           background-color: transparent;
@@ -487,102 +496,102 @@
           width: 100%;
         }
 
-        .pc768-1440 .tech-81Wu0H {
+        .main .tech-81Wu0H {
           background: linear-gradient(180deg, rgb(162.00000554323196, 70.00000342726707, 137.00000703334808) 0%, rgb(143.00000667572021, 143.00000667572021, 143.00000667572021) 45.89996337890625%, rgb(129.62499797344208, 15.554993525147438, 98.62772047519684) 90.12361764907837%);
         }
 
-        .pc768-1440 .icons-mMWH13 {
+        .main .icons-mMWH13 {
           height: 16px;
           width: 16px;
         }
 
-        .pc768-1440 .tech-K5cAN2 {
+        .main .tech-K5cAN2 {
           background: linear-gradient(180deg, rgb(52.000000700354576, 122.00000032782555, 180.00000447034836) 0%, rgb(255, 202.00000315904617, 29.000000171363354) 45.89996337890625%, rgb(7.729325797408819, 82.75820642709732, 144.92499858140945) 90.12361764907837%);
         }
 
-        .pc768-1440 .tech__icon-ACuReO {
+        .main .tech__icon-ACuReO {
           background-color: transparent;
           height: 16px;
           position: relative;
           width: 16px;
         }
 
-        .pc768-1440 .tech-FQEzhC {
+        .main .tech-FQEzhC {
           background: linear-gradient(180deg, rgb(10.000000353902578, 207.00000286102295, 131.00000739097595) 0%, rgb(255, 114.0000008046627, 98.00000175833702) 45.89996337890625%, rgb(3.659274182282388, 156.8250024318695, 97.735695540905) 90.12361764907837%);
         }
 
-        .pc768-1440 .icons-snUJV5 {
+        .main .icons-snUJV5 {
           height: 16px;
           width: 16px;
         }
 
-        .pc768-1440 .tech-SFWywJ {
+        .main .tech-SFWywJ {
           background: linear-gradient(180deg, rgb(238.00000101327896, 81.00000277161598, 59.00000028312206) 0%, rgb(255, 171.79200410842896, 162.3499819636345) 45.89996337890625%, rgb(206.12500101327896, 34.97599080204964, 10.993323102593422) 90.12361764907837%);
         }
 
-        .pc768-1440 .icons-wxiiNU {
+        .main .icons-wxiiNU {
           height: 16px;
           width: 16px;
         }
 
-        .pc768-1440 .tech-7MxxRR {
+        .main .tech-7MxxRR {
           background: linear-gradient(180deg, rgb(63.000000044703484, 139.0000069141388, 190.0000038743019) 0%, rgb(86.00000247359276, 180.00000447034836, 244.0000006556511) 45.89996337890625%, rgb(8.907992150634527, 103.52920666337013, 167.0250079035759) 90.12361764907837%);
         }
 
-        .pc768-1440 .icons-SSe3Fa {
+        .main .icons-SSe3Fa {
           height: 16px;
           width: 16px;
         }
 
-        .pc768-1440 .tech-lBjqkf {
+        .main .tech-lBjqkf {
           background: linear-gradient(180deg, rgb(216.24999850988388, 198.00000339746475, 75.12500122189522) 0%, rgb(50.000000819563866, 51.00000075995922, 48.000000938773155) 47.999998927116394%, rgb(203.57500344514847, 178.2608985900879, 9.500177074223757) 100%);
         }
 
-        .pc768-1440 .icons-AJXHTS {
+        .main .icons-AJXHTS {
           height: 16px;
           width: 16px;
         }
 
-        .pc768-1440 .tech-y5sXxd {
+        .main .tech-y5sXxd {
           background: linear-gradient(180deg, rgb(31.000000052154064, 98.00000175833702, 174.00000482797623) 0%, rgb(52.000000700354576, 125.00000014901161, 198.00000339746475) 45.89996337890625%, rgb(5.906410189345479, 68.25323715806007, 138.97501945495605) 90.12361764907837%);
         }
 
-        .pc768-1440 .icons-pmRshW {
+        .main .icons-pmRshW {
           height: 16px;
           width: 16px;
         }
 
-        .pc768-1440 .tech-Smycwd {
+        .main .tech-Smycwd {
           background: linear-gradient(180deg, rgb(228.0000016093254, 77.00000301003456, 38.0000015348196) 0%, rgb(255, 108.00000116229057, 57.00000040233135) 45.89996337890625%, rgb(228.0000016093254, 38.0000015348196, 38.0000015348196) 90.12361764907837%);
         }
 
-        .pc768-1440 .icons-Jai0ei {
+        .main .icons-Jai0ei {
           height: 16px;
           width: 16px;
         }
 
-        .pc768-1440 .tech-XzQJx1 {
+        .main .tech-XzQJx1 {
           background: linear-gradient(180deg, rgb(43.00000123679638, 63.000000044703484, 77.00000301003456) 0%, rgb(16.000000946223736, 161.0000056028366, 225.00000178813934) 45.89996337890625%, rgb(29.06432691961527, 67.7176558971405, 94.77501600980759) 90.12361764907837%);
         }
 
-        .pc768-1440 .icons-VDjihQ {
+        .main .icons-VDjihQ {
           height: 16px;
           width: 16px;
         }
 
-        .pc768-1440 .tech-Y3ldD4 {
+        .main .tech-Y3ldD4 {
           background: linear-gradient(180deg, rgb(7.000000057742, 105.00000134110451, 173.00000488758087) 0%, rgb(120.00000044703484, 207.00000286102295, 245.00000059604645) 45.89996337890625%, rgb(4.9810197204351425, 75.55518373847008, 124.5250104367733) 90.12361764907837%);
         }
 
-        .pc768-1440 .icons-fURYIV {
+        .main .icons-fURYIV {
           height: 16px;
           width: 16px;
         }
 
-        .pc768-1440 .footer-3iiRca {
+        .main .footer {
           -webkit-backdrop-filter: var(--glas22);
           align-items: center;
-          align-self: stretch;
+          align-self: center;
           backdrop-filter: var(--glas22);
           background-color: var(--transparent-white80);
           display: flex;
@@ -597,7 +606,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .footer__text-ew1d9x {
+        .main .footer__text-ew1d9x {
           align-self: stretch;
           background-color: transparent;
           color: var(--basics-dark_grey);
@@ -609,11 +618,11 @@
           text-align: center;
         }
 
-        .pc768-1440 .span0-tCK2lO {
+        .main .span0-tCK2lO {
           font-style: normal;
         }
 
-        .pc768-1440 .span1-tCK2lO {
+        .main .span1-tCK2lO {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-m);
           font-style: normal;
@@ -621,11 +630,11 @@
           letter-spacing: 0.00px;
         }
 
-        .pc768-1440 .span2-tCK2lO {
+        .main .span2-tCK2lO {
           font-style: normal;
         }
 
-        .pc768-1440 .about-me__contact {
+        .main .about-me__contact {
           align-items: center;
           background-color: transparent;
           display: inline-flex;
@@ -635,14 +644,14 @@
           position: relative;
         }
 
-        .pc768-1440 .about-me__contact-icon {
+        .main .about-me__contact-icon {
           background-color: transparent;
           height: 16px;
           position: relative;
           width: 16px;
         }
 
-        .pc768-1440 .about-me__contact-text {
+        .main .about-me__contact-text {
           background-color: transparent;
           color: var(--basics-dark_grey);
           font-style: normal;
@@ -654,7 +663,7 @@
           width: fit-content;
         }
 
-        .pc768-1440 .card__certification {
+        .main .card__certification {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -668,7 +677,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .card__project {
+        .main .card__project {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -682,7 +691,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .certification__degree {
+        .main .certification__degree {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -695,7 +704,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .certification__degree-date {
+        .main .certification__degree-date {
           background-color: transparent;
           color: var(--basics-dark_grey);
           font-style: normal;
@@ -706,14 +715,14 @@
           width: fit-content;
         }
 
-        .pc768-1440 .certification__degree-icon {
+        .main .certification__degree-icon {
           background-color: transparent;
           height: 24px;
           position: relative;
           width: 24px;
         }
 
-        .pc768-1440 .certification__degree-text {
+        .main .certification__degree-text {
           background-color: transparent;
           color: var(--basics-dark_grey);
           flex: 1;
@@ -724,7 +733,7 @@
           text-align: left;
         }
 
-        .pc768-1440 .certification__degree-date {
+        .main .certification__degree-date {
           background-color: transparent;
           color: var(--basics-dark_grey);
           font-style: normal;
@@ -735,14 +744,14 @@
           width: fit-content;
         }
 
-        .pc768-1440 .certification__degree-icon {
+        .main .certification__degree-icon {
           background-color: transparent;
           height: 24px;
           position: relative;
           width: 24px;
         }
 
-        .pc768-1440 .certification__degree-text {
+        .main .certification__degree-text {
           background-color: transparent;
           color: var(--basics-dark_grey);
           flex: 1;
@@ -753,7 +762,7 @@
           text-align: left;
         }
 
-        .pc768-1440 .certification__institution {
+        .main .certification__institution {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -765,14 +774,14 @@
           width: 100%;
         }
 
-        .pc768-1440 .certification__institution-icon {
+        .main .certification__institution-icon {
           background-color: transparent;
           height: 28px;
           position: relative;
           width: 28px;
         }
 
-        .pc768-1440 .certification__institution-name {
+        .main .certification__institution-name {
           background-color: transparent;
           color: var(--basics-dark_grey);
           flex: 1;
@@ -783,12 +792,12 @@
           text-align: left;
         }
 
-        .pc768-1440 .icons {
+        .main .icons {
           background-color: transparent;
           position: relative;
         }
 
-        .pc768-1440 .project__button {
+        .main .project__button {
           background-color: transparent;
           height: 25.239990234375px;
           margin-bottom: -1.24px;
@@ -796,7 +805,7 @@
           width: 24px;
         }
 
-        .pc768-1440 .project__description {
+        .main .project__description {
           align-self: stretch;
           background-color: transparent;
           color: var(--basics-dark_grey);
@@ -808,7 +817,7 @@
           text-align: left;
         }
 
-        .pc768-1440 .project__f1 {
+        .main .project__f1 {
           align-items: flex-start;
           align-self: stretch;
           background-color: transparent;
@@ -820,7 +829,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .project__f2 {
+        .main .project__f2 {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -833,7 +842,7 @@
           position: relative;
         }
 
-        .pc768-1440 .project__f3 {
+        .main .project__f3 {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -845,7 +854,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .project__image {
+        .main .project__image {
           background-color: transparent;
           height: 110px;
           object-fit: cover;
@@ -853,7 +862,7 @@
           width: 110px;
         }
 
-        .pc768-1440 .project__name {
+        .main .project__name {
           align-self: stretch;
           background-color: transparent;
           color: var(--basics-dark_grey);
@@ -866,7 +875,7 @@
           text-align: left;
         }
 
-        .pc768-1440 .project__tech {
+        .main .project__tech {
           align-items: center;
           background-color: var(--basics-ultra_dark_grey);
           border-radius: 30px;
@@ -879,7 +888,7 @@
           position: relative;
         }
 
-        .pc768-1440 .project__tech-text {
+        .main .project__tech-text {
           background-color: transparent;
           color: var(--basics-white);
           font-style: normal;
@@ -891,7 +900,7 @@
           width: fit-content;
         }
 
-        .pc768-1440 .project__techs {
+        .main .project__techs {
           align-items: flex-start;
           align-self: stretch;
           background-color: transparent;
@@ -904,7 +913,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .section {
+        .main .section {
           align-items: flex-start;
           background-color: transparent;
           display: flex;
@@ -916,7 +925,7 @@
           position: relative;
         }
 
-        .pc768-1440 .section__card {
+        .main .section__card {
           -webkit-backdrop-filter: var(--glas18);
           backdrop-filter: var(--glas18);
           background-color: var(--transparent-white80);
@@ -931,7 +940,7 @@
           position: relative;
         }
 
-        .pc768-1440 .section__title {
+        .main .section__title {
           background-color: transparent;
           color: var(--basics-dark_grey);
           font-style: normal;
@@ -942,7 +951,7 @@
           width: fit-content;
         }
 
-        .pc768-1440 .section_body {
+        .main .section_body {
           align-self: stretch;
           background-color: transparent;
           display: flex;
@@ -951,7 +960,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .section_header {
+        .main .section_header {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -965,14 +974,14 @@
           width: 100%;
         }
 
-        .pc768-1440 .section_header__chevron {
+        .main .section_header__chevron {
           background-color: transparent;
           height: 5px;
           position: relative;
           width: 9.5px;
         }
 
-        .pc768-1440 .section_header__f2 {
+        .main .section_header__f2 {
           -webkit-backdrop-filter: var(--glas18);
           align-items: center;
           backdrop-filter: var(--glas18);
@@ -987,14 +996,14 @@
           position: relative;
         }
 
-        .pc768-1440 .section_header__icon {
+        .main .section_header__icon {
           background-color: transparent;
           height: 16px;
           position: relative;
           width: 16px;
         }
 
-        .pc768-1440 .tech {
+        .main .tech {
           align-items: center;
           background-color: transparent;
           border-radius: 30px;
@@ -1005,7 +1014,7 @@
           position: relative;
         }
 
-        .pc768-1440 .tech__back {
+        .main .tech__back {
           -webkit-backdrop-filter: var(--glas18);
           align-items: center;
           backdrop-filter: var(--glas18);
@@ -1021,7 +1030,7 @@
           position: relative;
         }
 
-        .pc768-1440 .tech__f1 {
+        .main .tech__f1 {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -1033,7 +1042,7 @@
           width: 100%;
         }
 
-        .pc768-1440 .tech__name {
+        .main .tech__name {
           background-color: transparent;
           color: var(--basics-dark_grey);
           font-style: normal;
