@@ -109,12 +109,14 @@
         }
 
         /* general */
-    
+
         /* Flexbox para distribuir las tarjetas */
         .cards-container {
           display: flex;
-          flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea si no caben */
-          gap: 16px; /* Espacio entre las tarjetas */
+          flex-wrap: wrap;
+          /* Permite que las tarjetas se muevan a la siguiente línea si no caben */
+          gap: 16px;
+          /* Espacio entre las tarjetas */
           margin-bottom: 16px;
           justify-content: flex-start;
           align-items: flex-start;
@@ -142,6 +144,7 @@
           top: 0px;
         }
 
+        /* BACKGROUND-VECTOR  */
         .main .page__background-vector {
           background-color: transparent;
           height: 1632px;
@@ -152,6 +155,31 @@
           z-index: -20;
           /* transform: rotate(45deg); */
         }
+
+        @media (max-width:888px) {
+          /* BACKGROUND-VECTOR  */
+          .main .page__background-vector {
+            width: 358.83px;
+            height: 1549.65px;
+            position: fixed;
+            left: 22.24px;
+            top: -300.81px;
+            transform: rotate(-45deg);
+          }
+        }
+
+        @media (max-width:525px) {
+          /* BACKGROUND-VECTOR  */
+          .main .page__background-vector {
+            width: 358.83px;
+            height: 1549.65px;
+            position: fixed;
+            left: 22.24px;
+            top: -155.81px;
+            transform: rotate(-45deg);
+          }
+        }
+        
 
 
         /* ***************************HEADER******************************* */
@@ -304,10 +332,10 @@
         }
 
         /* ***************************SECTIONS******************************* */
-        .main .sections { 
+        .main .sections {
           -webkit-backdrop-filter: var(--glas8);
           backdrop-filter: var(--glas8);
-          background-color: var(--transparent-black1);
+          background-color: var(--transparent-white2);
           border-radius: 20px;
           /* display: flex;
           flex: 0 0 0px;
@@ -930,7 +958,6 @@
           min-width: 296px;
           padding: 8px;
           position: relative;
-          /* Las tarjetas se agrupan en la misma fila siempre que el ancho mínimo lo permita, ocuparán todo el espacio disponible */
         }
 
         .main .section__title {
@@ -968,7 +995,7 @@
           height: fit-content;
         }
 
-        
+
 
         .main .section_header .f2 {
           -webkit-backdrop-filter: var(--glas18);
@@ -1049,3 +1076,5 @@
           text-align: left;
           width: fit-content;
         }
+
+        
