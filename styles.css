@@ -156,78 +156,50 @@
           /* transform: rotate(45deg); */
         }
 
-        @media (max-width:888px) {
-          /* BACKGROUND-VECTOR  */
-          .main .page__background-vector {
-            width: 358.83px;
-            height: 1549.65px;
-            position: fixed;
-            left: 22.24px;
-            top: -300.81px;
-            transform: rotate(-45deg);
-          }
-        }
-
-        @media (max-width:525px) {
-          /* BACKGROUND-VECTOR  */
-          .main .page__background-vector {
-            width: 358.83px;
-            height: 1549.65px;
-            position: fixed;
-            left: 22.24px;
-            top: -155.81px;
-            transform: rotate(-45deg);
-          }
-        }
-        
-
-
-        /* ***************************HEADER******************************* */
-        .main .header {
-          -webkit-backdrop-filter: var(--glas22);
-          backdrop-filter: var(--glas22);
+        /* NEW HEADER */ 
+        .headerdevice4-VxPVnb {
+          -webkit-backdrop-filter: blur(22px) brightness(100%);
           align-items: center;
-          align-content: center;
-          align-self: center;
-          background-color: var(--transparent-white80);
+          backdrop-filter: blur(22px) brightness(100%);
+          background-color: #fdfdfdcc;
           border-radius: 20px;
           display: flex;
-          flex: 0 0 auto;
           flex-direction: column;
           gap: 12px;
           justify-content: center;
           max-width: 1434px;
-          min-width: 304px;
-          padding: 4px 12px;
-          position: relative;
-          width: 100%;
+          min-width: 340px;
+          padding: 4px 12px;          
         }
 
-        .main .header__about-me {
-          align-items: flex-end;
+        .about-me-O9ZySO {
+          align-items: center;
           align-self: stretch;
           background-color: transparent;
           display: flex;
           flex: 0 0 auto;
           flex-wrap: wrap;
-          gap: 32px 32px;
-          justify-content: center;
+          gap: 0px 32px;
+          justify-content: space-between;
           position: relative;
           width: 100%;
         }
 
-        .main .about-me__f1 {
+        .f1-3HXnH4 {
           align-items: center;
           background-color: transparent;
           display: inline-flex;
           flex: 0 0 auto;
           gap: 8px;
           height: 110px;
+          margin-right: -10.00px;
           min-width: 164px;
+          padding: 0px 16px 0px 0px;
           position: relative;
+          /* width: 310px; */
         }
 
-        .main .about-me__picture {
+        .picture-kYWBKS {
           align-items: center;
           background-color: transparent;
           display: flex;
@@ -238,17 +210,18 @@
           width: 90px;
         }
 
-        .main .about-me__img {
-          box-shadow: var(--shadow_black30);
-          border-radius: 50px;
+        .about-me__img-qinaKK {
           background-color: transparent;
           height: 94px;
+          margin-bottom: -4.00px;
+          margin-left: -1.00px;
+          margin-right: -3.00px;
           object-fit: cover;
           position: relative;
           width: 94px;
         }
 
-        .main .about-me__f2 {
+        .f2-kYWBKS {
           align-items: flex-start;
           align-self: stretch;
           background-color: transparent;
@@ -262,9 +235,9 @@
           position: relative;
         }
 
-        .main .about-me__name {
+        .name-xY732N {
           background-color: transparent;
-          color: var(--basics-black);
+          color: #05060b;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -273,9 +246,9 @@
           width: fit-content;
         }
 
-        .main .about-me__role {
+        .role-xY732N {
           background-color: transparent;
-          color: var(--basics-dark_grey);
+          color: var(--cape-cod);
           font-style: normal;
           font-weight: 300;
           line-height: normal;
@@ -284,9 +257,9 @@
           width: fit-content;
         }
 
-        .main .about-me__degree {
+        .degree-xY732N {
           background-color: transparent;
-          color: var(--basics-black);
+          color: #05060b;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -295,7 +268,7 @@
           width: fit-content;
         }
 
-        .main .about-me__description {
+        .description-3HXnH4 {
           align-items: center;
           background-color: transparent;
           display: flex;
@@ -303,33 +276,65 @@
           flex-grow: 1;
           gap: 10px;
           justify-content: center;
+          max-width: 620px;
+          min-width: 260px;
           padding: 20px 0px;
           position: relative;
         }
 
-        .main .about-me__description-text {
+        .description-text-9zJAFx {
           background-color: transparent;
-          color: var(--basics-dark_grey);
+          color: var(--cape-cod);
           flex: 1;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
           margin-top: -1.00px;
           position: relative;
-          text-align: left;
+          text-align: center;
         }
 
-        .main .about-me__contacts {
+        .contacts-O9ZySO {
+          align-items: center;
+          align-self: stretch;
+          background-color: transparent;
+          display: flex;
+          gap: 16px;
+          height: 16px;
+          justify-content: flex-end;
+          position: relative;
+          width: 100%;
+        }
+
+        .contact {
           align-items: center;
           background-color: transparent;
           display: inline-flex;
           flex: 0 0 auto;
-          flex-wrap: wrap;
-          gap: 16px 16px;
-          height: 110px;
-          justify-content: flex-end;
+          gap: 10px;
+          justify-content: center;
           position: relative;
         }
+
+        .contact-icon {
+          background-color: transparent;
+          height: 16px;
+          position: relative;
+          width: 16px;
+        }
+
+        .contact-text {
+          background-color: transparent;
+          color: var(--cape-cod);
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          margin-top: -0.50px;
+          position: relative;
+          text-align: left;
+          width: fit-content;
+        }
+
 
         /* ***************************SECTIONS******************************* */
         .main .sections {
@@ -1077,4 +1082,33 @@
           width: fit-content;
         }
 
-        
+        /* MEDIA QUERIES */
+        @media (max-width:888px) {
+
+          /* BACKGROUND-VECTOR  */
+          .main .page__background-vector {
+            width: 358.83px;
+            height: 1549.65px;
+            position: fixed;
+            left: 22.24px;
+            top: -300.81px;
+            transform: rotate(-45deg);
+          }
+        }
+
+        @media (max-width:525px) {
+
+          /* BACKGROUND-VECTOR  */
+          .main .page__background-vector {
+            width: 358.83px;
+            height: 1549.65px;
+            position: fixed;
+            left: 22.24px;
+            top: -155.81px;
+            transform: rotate(-45deg);
+          }
+
+          .cards-container {
+            margin-bottom: 32px;
+          }
+        }
