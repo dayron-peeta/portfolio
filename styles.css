@@ -109,23 +109,15 @@
         }
 
         /* general */
-
-        /* Flexbox para distribuir las tarjetas */
         .cards-container {
           display: flex;
           flex-wrap: wrap;
-          /* Permite que las tarjetas se muevan a la siguiente línea si no caben */
           gap: 16px;
-          /* Espacio entre las tarjetas */
           margin-bottom: 16px;
           justify-content: flex-start;
           align-items: flex-start;
           height: fit-content;
         }
-
-
-        /* screen - main */
-
 
         .main {
           align-items: center;
@@ -134,7 +126,6 @@
           flex-direction: column;
           gap: 32px;
           justify-content: center;
-          left: 0px;
           max-width: 786px;
           min-width: 100%;
           overflow: hidden;
@@ -142,10 +133,11 @@
           padding: 24px 16px;
           position: relative;
           top: 0px;
+          left: 0px;
         }
 
         /* BACKGROUND-VECTOR  */
-        .main .page__background-vector {
+        .main .background-vector {
           background-color: transparent;
           height: 1632px;
           left: 705px;
@@ -156,8 +148,8 @@
           /* transform: rotate(45deg); */
         }
 
-        /* NEW HEADER */ 
-        .headerdevice4-VxPVnb {
+        /* HEADER */ 
+        .main .header-device {
           -webkit-backdrop-filter: blur(22px) brightness(100%);
           align-items: center;
           backdrop-filter: blur(22px) brightness(100%);
@@ -169,10 +161,11 @@
           justify-content: center;
           max-width: 1434px;
           min-width: 340px;
-          padding: 4px 12px;          
+          padding: 4px 12px;  
+          width: 100%;        
         }
 
-        .about-me-O9ZySO {
+        .header-device .about-me {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -185,7 +178,7 @@
           width: 100%;
         }
 
-        .f1-3HXnH4 {
+        .about-me .f1 {
           align-items: center;
           background-color: transparent;
           display: inline-flex;
@@ -196,32 +189,18 @@
           min-width: 164px;
           padding: 0px 16px 0px 0px;
           position: relative;
-          /* width: 310px; */
         }
 
-        .picture-kYWBKS {
-          align-items: center;
+        .about-me .f1 .picture {
           background-color: transparent;
-          display: flex;
-          gap: 10px;
-          justify-content: center;
-          min-width: 90px;
-          position: relative;
-          width: 90px;
-        }
-
-        .about-me__img-qinaKK {
-          background-color: transparent;
-          height: 94px;
-          margin-bottom: -4.00px;
-          margin-left: -1.00px;
-          margin-right: -3.00px;
-          object-fit: cover;
           position: relative;
           width: 94px;
+          height: 94px;
+          object-fit: cover;
+          border-radius: 20px;
         }
 
-        .f2-kYWBKS {
+        .about-me .f2 {
           align-items: flex-start;
           align-self: stretch;
           background-color: transparent;
@@ -235,40 +214,34 @@
           position: relative;
         }
 
-        .name-xY732N {
+        .about-me .f2 .name {
           background-color: transparent;
-          color: #05060b;
-          font-style: normal;
-          font-weight: 400;
+          color: var(--basics-black);         
           line-height: normal;
           position: relative;
           text-align: left;
           width: fit-content;
         }
 
-        .role-xY732N {
+        .about-me .f2 .role {
           background-color: transparent;
           color: var(--cape-cod);
-          font-style: normal;
-          font-weight: 300;
           line-height: normal;
           position: relative;
           text-align: left;
           width: fit-content;
         }
 
-        .degree-xY732N {
+        .about-me .f2 .degree {
           background-color: transparent;
-          color: #05060b;
-          font-style: normal;
-          font-weight: 400;
+          color:var(--basics-black);
           line-height: normal;
           position: relative;
           text-align: left;
           width: fit-content;
         }
 
-        .description-3HXnH4 {
+        .about-me .description {
           align-items: center;
           background-color: transparent;
           display: flex;
@@ -282,9 +255,9 @@
           position: relative;
         }
 
-        .description-text-9zJAFx {
+        .about-me .description .text {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-black);
           flex: 1;
           font-style: normal;
           font-weight: 400;
@@ -294,7 +267,7 @@
           text-align: center;
         }
 
-        .contacts-O9ZySO {
+        .header-device .contacts {
           align-items: center;
           align-self: stretch;
           background-color: transparent;
@@ -336,6 +309,7 @@
           width: fit-content;
         }
 
+        /* voy revisando por aquí */
 
         /* ***************************SECTIONS******************************* */
         .main .sections {
@@ -351,7 +325,7 @@
           backdrop-filter: var(--glas8);
           background-color: var(--transparent-white2);
           border-radius: 20px;
-          padding: 16px;
+          padding: 16px 16px 32px 16px ;
         }
 
         .main .section-certifications {
@@ -991,7 +965,7 @@
           display: flex;
           flex: 0 0 auto;
           gap: 16px;
-          justify-content: center;
+          justify-content: flex-start;
           padding: 0px 0px 0px 8px;
           position: relative;
           width: 100%;
@@ -1084,7 +1058,7 @@
         @media (max-width:888px) {
 
           /* BACKGROUND-VECTOR  */
-          .main .page__background-vector {
+          .main .background-vector {
             width: 358.83px;
             height: 1549.65px;
             position: fixed;
@@ -1097,7 +1071,7 @@
         @media (max-width:525px) {
 
           /* BACKGROUND-VECTOR  */
-          .main .page__background-vector {
+          .main .background-vector {
             width: 358.83px;
             height: 1549.65px;
             position: fixed;
