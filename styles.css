@@ -338,22 +338,19 @@
 
         /* ***************************SECTIONS******************************* */
         .main .sections {
-          -webkit-backdrop-filter: var(--glas8);
-          backdrop-filter: var(--glas8);
-          background-color: var(--transparent-white2);
-          border-radius: 20px;
-          /* display: flex;
-          flex: 0 0 0px;
-          flex-wrap: wrap;
-          gap: 16px 16px;
-          justify-content: center;
-          align-items: flex-start;
-          align-self: center; */
           max-width: 1426px;
           min-width: 330px;
           padding: 16px;
           position: relative;
           width: 100%;
+        }
+        
+         .blurry-frame {
+          -webkit-backdrop-filter: var(--glas8);
+          backdrop-filter: var(--glas8);
+          background-color: var(--transparent-white2);
+          border-radius: 20px;
+          padding: 16px;
         }
 
         .main .section-certifications {
