@@ -159,7 +159,7 @@
           flex-direction: column;
           gap: 12px;
           justify-content: center;
-          max-width: 1434px;
+          max-width: 1100px;
           min-width: 340px;
           padding: 4px 12px;  
           width: 100%;        
@@ -313,7 +313,7 @@
 
         /* ***************************SECTIONS******************************* */
         .main .sections {
-          max-width: 1426px;
+          max-width: 1100px;
           min-width: 330px;
           padding: 16px;
           position: relative;
@@ -435,7 +435,7 @@
         }
 
         .main .section-PSojmK {
-          max-width: 1434px;
+          max-width: 1100px;
           min-width: 754px;
         }
 
@@ -447,7 +447,7 @@
         }
 
         .main .section-QKH3sU {
-          max-width: 1434px;
+          max-width: 1100px;
           min-width: 754px;
         }
 
@@ -527,7 +527,7 @@
           flex-direction: column;
           gap: 8px;
           justify-content: center;
-          max-width: 1434px;
+          max-width: 1100px;
           min-width: 304px;
           padding: 8px 16px;
           position: relative;
@@ -877,7 +877,6 @@
           box-shadow: var(--glass18-shadow);
           display: flex;
           gap: 16px;
-          justify-content: center;
           min-width: 296px;
           padding: 8px;
           position: relative;
