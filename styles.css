@@ -232,14 +232,6 @@
           width: fit-content;
         }
 
-        .about-me .f2 .degree {
-          background-color: transparent;
-          color:var(--basics-black);
-          line-height: normal;
-          position: relative;
-          text-align: left;
-          width: fit-content;
-        }
 
         .about-me .description {
           align-items: center;
@@ -310,6 +302,7 @@
         }
 
         /* voy revisando por aquí */
+
 
         /* ***************************SECTIONS******************************* */
         .main .sections {
