@@ -113,6 +113,9 @@
           background: var(--basics-white);
           overflow-x: hidden;
           font-family: var(--font-family-lexend);
+          background: radial-gradient(circle, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+          background-size: 10px 10px;
+          background-attachment: fixed;
         }
 
         /* general */
