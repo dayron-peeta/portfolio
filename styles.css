@@ -447,7 +447,7 @@
         }
 
         .language__f2{
-          padding: 0 4px 0 2px;
+          padding: 0 8px 0 2px;
           width: fit-content;
           height: fit-content;
         }
@@ -607,6 +607,12 @@
           align-self: stretch;
           flex: 0 0 auto;
           width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          justify-content: flex-start;
+          align-items: center;
+          height: fit-content;
         }
 
         .tech .icon {
@@ -1040,7 +1046,7 @@
           display: inline-flex;
           flex: 0 0 auto;
           gap: 8px;
-          padding: 1px;
+          padding: 4px;
           position: relative;
         }
 
