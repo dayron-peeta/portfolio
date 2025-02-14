@@ -265,7 +265,7 @@
           justify-content: center;
           position: relative;
           width: 100%;
-          padding: 16px 8px;
+          padding: 16px 32px;
           position: fixed; /* Fija el div en la pantalla */
           top: 0; /* Lo coloca en la parte superior */
           left: 0; /* Lo alinea a la izquierda */
