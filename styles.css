@@ -20,6 +20,8 @@
           --transparent-white80: rgba(254 254 254 / 0.8);
           --transparent-dark_blue98: rgba(1 5 20 / 0.98);
 
+          --svg-filter: none;
+
           /* SHADOWS */
           --shadow_black30: 1px 2px 2px 0px var(--transparent-black30);
 
@@ -110,9 +112,52 @@
 
         body {
           margin: 0px;
-          background: var(--basics-white);
+          background-color: var(--basics-white) !important;
           overflow-x: hidden;
           font-family: var(--font-family-lexend);
+        }
+
+        .dark-mode{
+          --basics-white: #131313;
+          --basics-black: #f8f0f0;
+          --basics-dark_grey: var(--basics-white2);
+          --basics-ultra_dark_grey: #f3f3f3;
+          --transparent-white80: var(--transparent-black80);
+          --svg-filter: invert(1) hue-rotate(180deg);
+        }
+
+        .buttons-container{
+          z-index: 100;
+          position: fixed;
+          top: 50px;
+          right: 20px;
+          display: flex;
+          flex: 0 0 auto;
+          flex-direction: row; 
+          max-width: 1100px;
+          min-width: 100%;
+          gap: 16px;
+          justify-content: flex-end;
+          width: 100%;
+        }
+
+        .toogle-button{
+          border: none;
+          cursor: pointer;
+          -webkit-backdrop-filter: var(--glas18);
+          backdrop-filter: var(--glas18);
+          background-color: var(--transparent-white2);
+          border-radius: 20px;
+          box-shadow: var(--glass18-shadow);
+          display: flex;
+          gap: 8px;
+          padding: 8px;
+          position: relative;
+        }
+
+        .button-icon{
+          filter: var(--svg-filter);
+          transition: opacity 3.3s ease;
         }
 
         /* general */
@@ -150,7 +195,7 @@
           -webkit-backdrop-filter: blur(22px) brightness(100%);
           align-items: center;
           backdrop-filter: blur(22px) brightness(100%);
-          background-color: #fdfdfdcc;
+          background-color: var(--transparent-white80);
           border-radius: 20px;
           display: flex;
           flex-direction: column;
@@ -222,7 +267,7 @@
 
         .about-me .f2 .role {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-dark_grey);
           line-height: normal;
           position: relative;
           text-align: left;
@@ -296,15 +341,20 @@
         }
 
         .contact-icon {
-          background-color: transparent;
+          filter: var(--svg-filter);
+          border-radius: 3px;
           height: 16px;
           position: relative;
           width: 16px;
         }
 
+        .contact-icon_circle {
+          border-radius: 30px;
+        }
+        
         .contact-text {
           background-color: transparent;
-          color: var(--cape-cod);
+          color: var(--basics-black);
           font-style: normal;
           font-weight: 300;
           line-height: normal;
@@ -372,6 +422,7 @@
         }
 
         .main .section_header .f2 .icon {
+          filter: var(--svg-filter);
           background-color: transparent;
           height: 16px;
           position: relative;
@@ -379,6 +430,7 @@
         }
 
         .main .section_header .f2 .chevron {
+          filter: var(--svg-filter);
           background-color: transparent;
           height: 5px;
           position: relative;
@@ -719,6 +771,7 @@
         }
 
         .main .about-me__contact-icon {
+          filter: var(--svg-filter);
           background-color: transparent;
           height: 16px;
           position: relative;
@@ -798,6 +851,7 @@
         }
 
         .main .certification__degree-icon {
+          filter: var(--svg-filter);
           background-color: transparent;
           height: 24px;
           position: relative;
@@ -887,6 +941,7 @@
         }
 
         .main .project__button {
+          filter: var(--svg-filter);
           background-color: transparent;
           height: 25.239990234375px;
           margin-bottom: -1.24px;
