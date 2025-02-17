@@ -135,22 +135,25 @@
           flex: 0 0 auto;
           flex-direction: row; 
           max-width: 1100px;
-          min-width: 100%;
-          gap: 16px;
+          gap: 8px;
           justify-content: flex-end;
-          width: 100%;
+          
         }
 
         .toogle-button{
+          width: 40px;
+          height: 40px;
           border: none;
           cursor: pointer;
           -webkit-backdrop-filter: var(--glas18);
           backdrop-filter: var(--glas18);
           background-color: var(--transparent-white2);
+          color: var(--basics-black); 
           border-radius: 20px;
           box-shadow: var(--glass18-shadow);
           display: flex;
-          gap: 8px;
+          align-items: center;
+          justify-content: center;
           padding: 8px;
           position: relative;
         }
@@ -508,7 +511,7 @@
         color: var(--basics-dark_grey);
         }
 
-        /* //TOOD */
+        /* //TODO */
         /* voy revisando por aquí */
 
         .main .section-certifications {
@@ -744,11 +747,11 @@
           text-align: center;
         }
 
-        .main .span0-tCK2lO {
+        .span0-tCK2lO {
           font-style: normal;
         }
 
-        .main .span1-tCK2lO {
+        .span1-tCK2lO {
           font-family: var(--font-family-lexend);
           font-size: var(--font-size-m);
           font-style: normal;
@@ -756,9 +759,6 @@
           letter-spacing: 0.00px;
         }
 
-        .main .span2-tCK2lO {
-          font-style: normal;
-        }
 
         .main .about-me__contact {
           align-items: center;

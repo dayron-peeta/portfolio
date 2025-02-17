@@ -34,35 +34,39 @@
                     <div class="contact-text m-light">linkedin</div>
                 </a>
                 <a href="https://github.com/dayron-peeta" target="_blank" rel="noopener noreferrer" class="contact"><img
-                        class="contact-icon contact-icon_circle" src="./statics/icons/github.svg" alt="github-contact-icon">
+                        class="contact-icon contact-icon_circle" src="./statics/icons/github.svg"
+                        alt="github-contact-icon">
                     <div class="contact-text m-light">github</div>
                 </a>
             </div>
         </div>
         <div class="buttons-container">
+            <button id="langSwitch" class="toogle-button xl-reg">En</button>
             <button id="toogle-button" class="toogle-button">
                 <img id="button-icon" class="button-icon" src="./statics/icons/sun.svg" alt="moon icon">
             </button>
         </div>
-        
+
         <div class="header-device container-fluid">
             <div class="about-me">
                 <div class="f1">
                     <img class="picture" src="./statics/IMG_0892.JPG" alt="about-me__img">
                     <div class="f2">
-                        <div class="name xxl-reg">Dayron Peeta</div>
-                        <div class="role m-light">Odoo Developer</div>
-                        <div class="name xl-reg">Computer Science Engineer</div>
+                        <div id="about_me_name" class="name xxl-reg">Dayron Peeta</div>
+                        <div id="about_me_role" class="role m-light" es="Desarrollador Odoo">Odoo Developer</div>
+                        <div id="about_me_degree" class="name xl-reg" es="Ingeniero en Ciencias Informáticas">Computer
+                            Science Engineer</div>
                     </div>
                 </div>
                 <div class="description">
-                    <p class="text m-reg">I am a lucky optimist, a faithful
-                        believer in progress and change, and totally in favor of the idea of 'automating all possible
-                        processes'.</p>
+                    <p id="about_me_description" class="text m-reg"
+                        es="Soy un optimista afortunado, un fiel creyente en el progreso y el cambio, y totalmente a favor de la idea de 'automatizar todos los procesos posibles'.">
+                        I am a lucky optimist, a faithful believer in progress and change, and totally in favor of the
+                        idea of 'automating all possible processes'.</p>
                 </div>
             </div>
         </div>
-        
+
 
         <!-- voy revisando por aquí -->
         <div class="container-fluid  pb-3 pt-3 sections ">
@@ -74,7 +78,8 @@
                             <img class="icon" src="./statics/icons/certifications.svg" alt="icon"><img class="chevron"
                                 src="./statics/icons/chevron.svg" alt="chevron">
                         </div>
-                        <div class="section__title section-name">
+                        <div id="section__title_certifications" class="section__title section-name"
+                            es="CERTIFICACIONES">
                             CERTIFICATIONS
                         </div>
                     </div>
@@ -104,8 +109,10 @@
                             <div class="certification"><img class="certification__degree-icon"
                                     src="./statics/icons/degree.svg" alt="certification__degree-icon">
                                 <div class="card-f1">
-                                    <div class="certification__degree-text l-bold">Computer Science Engineer</div>
-                                    <div class="certification__company-name-xU1IDg s-light">By: Computer Science
+                                    <div id="cert1" class="certification__degree-text l-bold"
+                                        es="Ingeniero en Ciencias Informáticas">Computer Science Engineer</div>
+                                    <div id="cert1_by" class="certification__company-name-xU1IDg s-light"
+                                        es="Por: Universidad de las Ciencias Informáticas">By: Computer Science
                                         University</div>
                                 </div>
                                 <div class="certification__degree-date m-light">2022-12</div>
@@ -114,14 +121,16 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://cert.efset.org/en/ERZgQK" target="_blank"
-                        rel="noopener noreferrer" class="section__card-N section__card ">
+                    <a href="https://cert.efset.org/en/ERZgQK" target="_blank" rel="noopener noreferrer"
+                        class="section__card-N section__card ">
                         <div class="card__experience-nDjm12">
                             <div class="certification"><img class="certification__degree-icon"
                                     src="./statics/icons/degree.svg" alt="certification__degree-icon">
                                 <div class="card-f1">
-                                    <div class="certification__degree-text l-bold">CEFR-B2 <br> English Level</div>
-                                    <div class="certification__company-name-xU1IDg s-light">By: EF SET</div>
+                                    <div id="cert2" class="certification__degree-text l-bold"
+                                        es="MCER-B2 Nivel de Inglés">CEFR-B2 <br> English Level</div>
+                                    <div id="cert2_by" class="certification__company-name-xU1IDg s-light"
+                                        es="Por: EF SET">By: EF SET</div>
                                 </div>
                                 <div class="certification__degree-date m-light">2025-02</div>
                                 <img class="icons-faded icon" src="./statics/icons/efset.svg"
@@ -154,8 +163,10 @@
                             <div class="certification"><img class="certification__degree-icon"
                                     src="./statics/icons/degree.svg" alt="certification__degree-icon">
                                 <div class="card-f1">
-                                    <div class="certification__degree-text l-bold">Basic Odoo for Developers</div>
-                                    <div class="certification__company-name-xU1IDg s-light">By: Desoft</div>
+                                    <div id="cert3" class="certification__degree-text l-bold"
+                                        es="Odoo Básico para Desarrolladores">Basic Odoo for Developers</div>
+                                    <div id="cert3_by" class="certification__company-name-xU1IDg s-light"
+                                        es="Por: Desoft">By: Desoft</div>
                                 </div>
                                 <div class="certification__degree-date m-light">2023-10</div>
                                 <img class="icons-faded icon" src="./statics/icons/desoft_logo.svg"
@@ -190,8 +201,10 @@
                             <div class="certification"><img class="certification__degree-icon"
                                     src="./statics/icons/degree.svg" alt="certification__degree-icon">
                                 <div class="card-f1">
-                                    <div class="certification__degree-text l-bold">Python Intermediate</div>
-                                    <div class="certification__company-name-xU1IDg s-light">By: Sololearn</div>
+                                    <div id="cert4" class="certification__degree-text l-bold" es="Python Intermedio">
+                                        Python Intermediate</div>
+                                    <div id="cert4_by" class="certification__company-name-xU1IDg s-light"
+                                        es="Por: Sololearn">By: Sololearn</div>
                                 </div>
                                 <div class="certification__degree-date m-light">2025-02</div>
                                 <img class="icons-faded icon" src="./statics/icons/sololearn.svg"
@@ -205,8 +218,10 @@
                             <div class="certification"><img class="certification__degree-icon"
                                     src="./statics/icons/degree.svg" alt="certification__degree-icon">
                                 <div class="card-f1">
-                                    <div class="certification__degree-text l-bold">Python for Beginners</div>
-                                    <div class="certification__company-name-xU1IDg s-light">By: Sololearn</div>
+                                    <div id="cert5" class="certification__degree-text l-bold"
+                                        es="Python para Principiantes">Python for Beginners</div>
+                                    <div id="cert5_by" class="certification__company-name-xU1IDg s-light"
+                                        es="Por: Sololearn">By: Sololearn</div>
                                 </div>
                                 <div class="certification__degree-date m-light">2022-11</div>
                                 <img class="icons-faded icon" src="./statics/icons/sololearn.svg"
@@ -239,8 +254,9 @@
                             <div class="certification"><img class="certification__degree-icon"
                                     src="./statics/icons/degree.svg" alt="certification__degree-icon">
                                 <div class="card-f1">
-                                    <div class="certification__degree-text l-bold">HTML</div>
-                                    <div class="certification__company-name-xU1IDg s-light">By: Sololearn</div>
+                                    <div id="cert6" class="certification__degree-text l-bold" es="HTML">HTML</div>
+                                    <div id="cert6_by" class="certification__company-name-xU1IDg s-light"
+                                        es="Por: Sololearn">By: Sololearn</div>
                                 </div>
                                 <div class="certification__degree-date m-light">2024-06</div>
                                 <img class="icons-faded icon" src="./statics/icons/sololearn.svg"
@@ -257,7 +273,7 @@
                             <img class="icon" src="./statics/icons/experience.svg" alt="icon"><img class="chevron"
                                 src="./statics/icons/chevron.svg" alt="chevron">
                         </div>
-                        <div class="section__title section-name">
+                        <div id="section__title_experience" class="section__title section-name" es="EXPERIENCIA">
                             EXPERIENCE
                         </div>
                     </div>
@@ -284,11 +300,14 @@
                             <div class="certification"><img class="certification__degree-icon"
                                     src="./statics/icons/briefcase.svg" alt="certification__degree-icon">
                                 <div class="card-f1">
-                                    <div class="certification__degree-text l-bold">Odoo
+                                    <div id="exp1" class="certification__degree-text l-bold" es="Desarrollador Odoo">
+                                        Odoo
                                         Developer</div>
-                                    <div class="certification__company-name-xU1IDg s-light">At: Desoft</div>
+                                    <div id="exp1_at" class="certification__company-name-xU1IDg s-light"
+                                        es="En: Desoft">At: Desoft</div>
                                 </div>
-                                <div class="certification__degree-date m-light">2023-04<br>Present</div>
+                                <div id="exp1_range" class="certification__degree-date m-light"
+                                    es="2023-04<br>Actualidad">2023-04<br>Present</div>
                                 <img class="icons-faded icons" src="./statics/icons/desoft_logo.svg" alt="Icons">
                             </div>
                         </div>
@@ -319,7 +338,8 @@
                             <img class="icon" src="./statics/icons/projects.svg" alt="icon"><img class="chevron"
                                 src="./statics/icons/chevron.svg" alt="chevron">
                         </div>
-                        <div class="section__title section-name">
+                        <div id="section__title_some_projects" class="section__title section-name"
+                            es="ALGUNOS PROYECTOS">
                             SOME PROJECTS
                         </div>
                     </div>
@@ -336,11 +356,13 @@
                                 </div>
                                 <div class="project__f2">
                                     <div class="project__f3">
-                                        <div class="project__name valign-text-middle l-bold">Biometric Virtual
-                                            Sentinel</div><img class="project__button" src="./statics/icons/link.svg"
+                                        <div id="project1" class="project__name valign-text-middle l-bold"
+                                            es="Centinela Virtual Biométrico">Biometric Virtual Sentinel</div><img
+                                            class="project__button" src="./statics/icons/link.svg"
                                             alt="project__button">
                                     </div>
-                                    <p class="project__description m-light">System for guard
+                                    <p id="project1_desc" class="project__description m-light"
+                                        es="Sistema de control de guardias por huellas digitales">System for guard
                                         control using fingerprints.</p>
                                 </div>
                             </div>
@@ -374,11 +396,13 @@
                                 </div>
                                 <div class="project__f2">
                                     <div class="project__f3">
-                                        <div class="project__name valign-text-middle l-bold">Peeta’s Mini Spa
+                                        <div id="project2" class="project__name valign-text-middle l-bold">Peeta’s Mini
+                                            Spa
                                         </div><img class="project__button" src="./statics/icons/link.svg"
                                             alt="project__button">
                                     </div>
-                                    <p class="project__description m-light">Software to manage
+                                    <p id="project2_desc" class="project__description m-light"
+                                        es="Software para administrar todo lo relacionado a un SPA">Software to manage
                                         everything related to a spa.</p>
                                 </div>
                             </div>
@@ -392,7 +416,7 @@
                                     </div>
                                 </article>
                                 <article class="project__tech">
-                                    <div class="project__tech-text m-light">
+                                    <div id="project1_tech" class="project__tech-text m-light" es="en desarrollo...">
                                         developing...</div>
                                 </article>
                             </div>
@@ -408,12 +432,13 @@
                                 </div>
                                 <div class="project__f2">
                                     <div class="project__f3">
-                                        <div class="project__name valign-text-middle l-bold">Fevexpo</div><img
-                                            class="project__button" src="./statics/icons/link.svg"
+                                        <div id="project3" class="project__name valign-text-middle l-bold">Fevexpo</div>
+                                        <img class="project__button" src="./statics/icons/link.svg"
                                             alt="project__button">
                                     </div>
-                                    <p class="project__description m-light">Platform for fairs
-                                        and virtual events.</p>
+                                    <p id="project3_desc" class="project__description m-light"
+                                        es="Plataforma para ferias y eventos virtuales">Platform for fairs and virtual
+                                        events.</p>
                                 </div>
                             </div>
                             <div class="project__techs">
@@ -442,7 +467,7 @@
                             <img class="icon" src="./statics/icons/stack.svg" alt="icon"><img class="chevron"
                                 src="./statics/icons/chevron.svg" alt="chevron">
                         </div>
-                        <div class="section__title section-name">
+                        <div id="section__title_tech_stack" class="section__title section-name" es="TECNOLOGÍAS">
                             TECH STACK
                         </div>
                     </div>
@@ -586,7 +611,7 @@
                             <img class="icon" src="./statics/icons/language.svg" alt="icon"><img class="chevron"
                                 src="./statics/icons/chevron.svg" alt="chevron">
                         </div>
-                        <div class="section__title section-name">
+                        <div id="section__title_languages" class="section__title section-name" es="IDIOMAS">
                             LANGUAGES
                         </div>
                     </div>
@@ -596,21 +621,21 @@
                         <article class="language__back">
                             <div class="language__f1">
                                 <img class="icon" src="./statics/icons/spanish-language-flag.svg" alt="Icons">
-                                <div class="language__name xl-reg">Spanish
+                                <div id="lang1" class="language__name xl-reg" es="Español">Spanish
                                 </div>
                             </div>
                             <div class="language__f2">
-                                <div class="language__level m-reg">Native</div>
+                                <div id="lang1_lv" class="language__level m-reg" es="Nativo">Native</div>
                             </div>
                         </article>
                         <article class="language__back">
                             <div class="language__f1">
                                 <img class="icon" src="./statics/icons/english-language-flag.svg" alt="Icons">
-                                <div class="language__name xl-reg">English
+                                <div id="lang2" class="language__name xl-reg" es="Inglés">English
                                 </div>
                             </div>
                             <div class="language__f2">
-                                <div class="language__level m-reg">Lv. B2</div>
+                                <div id="lang2_lv" class="language__level m-reg" es="Niv. B2">Lv. B2</div>
                             </div>
                         </article>
                     </a>
@@ -620,14 +645,16 @@
 
     </header>
     <footer class="footer">
-        <p class="footer__text m-reg"><span class="span0-tCK2lO m-reg">© 2024-2025
-                Dayron Peeta. All rights reserved.</span><span class="span1-tCK2lO"> About this website:
-            </span><span class="span2-tCK2lO m-reg">Designed with Figma and built with HTML/CSS.</span>
-        </p>
+        <p id="footer" class="footer__text m-reg" es='<span class="span0-tCK2lO m-reg">© 2024-2025 Dayron Peeta. Todos los derechos reservados.</span><span class="span1-tCK2lO"> Acerca de este sitio web: </span><span class="span2-tCK2lO m-reg">Diseñado con Figma y construido con HTML/CSS/JS.</span>'>
+            <span class="span0-tCK2lO m-reg">© 2024-2025 Dayron Peeta. All rights reserved.</span>
+            <span class="span1-tCK2lO"> About this website: </span>
+            <span class="span0-tCK2lO m-reg">Designed with Figma and built with HTML/CSS/JS.</span>
+          </p>
+          
     </footer>
 
     <!-- BOOTSTRAP -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></scrip>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
