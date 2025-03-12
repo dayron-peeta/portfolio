@@ -59,3 +59,28 @@ document.getElementById('langSwitch').addEventListener('click', () => {
     currentLang = currentLang === 'en' ? 'es' : 'en';
     updateContent();
 });
+
+// CONFIRMATION MODAL ON CLICK LINKS ////////////////////////////////////////////////////////////////////
+// Variable para almacenar la URL destino
+let targetUrl = '';
+
+// Escucha el clic en cualquier enlace de la página
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (link) {
+    // Prevenir la navegación por defecto
+    e.preventDefault();
+    // Guardar la URL del enlace
+    targetUrl = link.getAttribute('href');
+    // Actualizar el contenido del modal con la URL
+    document.getElementById('modalLink').textContent = targetUrl;
+    // Mostrar el modal usando la instancia de Bootstrap
+    const confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+    confirmationModal.show();
+  }
+});
+
+// Acción para el botón "Continuar"
+document.getElementById('continueButton').addEventListener('click', function() {
+  window.location.href = targetUrl;
+}); 
