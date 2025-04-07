@@ -1,91 +1,157 @@
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dayron Peeta Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="./statics/icons/briefcase.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./statics/icons/briefcase.svg"
+      type="image/x-icon"
+    />
     <script defer src="./logic.js"></script>
 
     <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- BOOTSTRAP -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="main">
-        <img class="background-vector" src="./statics/background_vector.svg" alt="background-vector">
-        <div class="contacts">
-            <div class="contacts_f1">
-                <a href="mailto:dayronpeeta@gmail.com" target="_blank" rel="noopener noreferrer" class="contact"><img
-                        class="contact-icon" src="./statics/icons/envelope.svg" alt="email-contact-icon">
-                    <div class="contact-text m-light">dayronpeeta@gmail.com</div>
-                </a>
-                <a href="https://www.linkedin.com/in/dayron-peeta/" target="_blank" rel="noopener noreferrer"
-                    class="contact"><img class="contact-icon" src="./statics/icons/linkedin.svg"
-                        alt="linkedin-contact-icon">
-                    <div class="contact-text m-light">linkedin</div>
-                </a>
-                <a href="https://github.com/dayron-peeta" target="_blank" rel="noopener noreferrer" class="contact"><img
-                        class="contact-icon contact-icon_circle" src="./statics/icons/github.svg"
-                        alt="github-contact-icon">
-                    <div class="contact-text m-light">github</div>
-                </a>
+      <img
+        class="background-vector"
+        src="./statics/background_vector.svg"
+        alt="background-vector"
+      />
+      <div class="contacts">
+        <div class="contacts_f1">
+          <a
+            href="mailto:dayronpeeta@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact"
+            ><img
+              class="contact-icon"
+              src="./statics/icons/envelope.svg"
+              alt="email-contact-icon"
+            />
+            <div class="contact-text m-light">dayronpeeta@gmail.com</div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dayron-peeta/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact"
+            ><img
+              class="contact-icon"
+              src="./statics/icons/linkedin.svg"
+              alt="linkedin-contact-icon"
+            />
+            <div class="contact-text m-light">linkedin</div>
+          </a>
+          <a
+            href="https://github.com/dayron-peeta"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact"
+            ><img
+              class="contact-icon contact-icon_circle"
+              src="./statics/icons/github.svg"
+              alt="github-contact-icon"
+            />
+            <div class="contact-text m-light">github</div>
+          </a>
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button id="langSwitch" class="toogle-button xl-reg" es="ES">EN</button>
+        <button id="toogle-button" class="toogle-button">
+          <img
+            id="button-icon"
+            class="button-icon"
+            src="./statics/icons/sun.svg"
+            alt="moon icon"
+          />
+        </button>
+      </div>
+
+      <div class="header-device container-fluid">
+        <div class="about-me">
+          <div class="f1">
+            <img
+              class="picture"
+              src="./statics/IMG_0892.JPG"
+              alt="about-me__img"
+            />
+            <div class="f2">
+              <div id="about_me_name" class="name xxl-reg">Dayron Peeta</div>
+              <div
+                id="about_me_role"
+                class="role m-light"
+                es="Desarrollador Odoo"
+              >
+                Odoo Developer
+              </div>
+              <div
+                id="about_me_degree"
+                class="name xl-reg"
+                es="Ingeniero<br> en Ciencias Informáticas"
+              >
+                Computer Science Engineer
+              </div>
             </div>
+          </div>
+          <div class="description">
+            <p
+              id="about_me_description"
+              class="text m-reg"
+              es="Soy un optimista afortunado, un fiel creyente en el progreso y el cambio, y totalmente a favor de la idea de 'automatizar todos los procesos posibles'."
+            >
+              I am a lucky optimist, a faithful believer in progress and change,
+              and totally in favor of the idea of 'automating all possible
+              processes'.
+            </p>
+          </div>
         </div>
-        <div class="buttons-container">
-            <button id="langSwitch" class="toogle-button xl-reg" es="ES">EN</button>
-            <button id="toogle-button" class="toogle-button">
-                <img id="button-icon" class="button-icon" src="./statics/icons/sun.svg" alt="moon icon">
-            </button>
-        </div>
+      </div>
 
-        <div class="header-device container-fluid">
-            <div class="about-me">
-                <div class="f1">
-                    <img class="picture" src="./statics/IMG_0892.JPG" alt="about-me__img">
-                    <div class="f2">
-                        <div id="about_me_name" class="name xxl-reg">Dayron Peeta</div>
-                        <div id="about_me_role" class="role m-light" es="Desarrollador Odoo">Odoo Developer</div>
-                        <div id="about_me_degree" class="name xl-reg" es="Ingeniero<br> en Ciencias Informáticas">
-                            Computer
-                            Science Engineer</div>
-                    </div>
-                </div>
-                <div class="description">
-                    <p id="about_me_description" class="text m-reg"
-                        es="Soy un optimista afortunado, un fiel creyente en el progreso y el cambio, y totalmente a favor de la idea de 'automatizar todos los procesos posibles'.">
-                        I am a lucky optimist, a faithful believer in progress and change, and totally in favor of the
-                        idea of 'automating all possible processes'.</p>
-                </div>
+      <!-- voy revisando por aquí -->
+      <div class="container-fluid pb-3 pt-3 sections">
+        <!-- CERTIFICATIONS -->
+        <div class="row">
+          <div class="col-12 cards-container blurry-frame">
+            <div class="section_header">
+              <div class="f2">
+                <img
+                  class="icon"
+                  src="./statics/icons/certifications.svg"
+                  alt="icon"
+                /><img
+                  class="chevron"
+                  src="./statics/icons/chevron.svg"
+                  alt="chevron"
+                />
+              </div>
+              <div
+                id="section__title_certifications"
+                class="section__title section-name"
+                es="CERTIFICACIONES"
+              >
+                CERTIFICATIONS
+              </div>
             </div>
-        </div>
-
-
-        <!-- voy revisando por aquí -->
-        <div class="container-fluid  pb-3 pt-3 sections ">
-            <!-- CERTIFICATIONS -->
-            <div class="row">
-                <div class="col-12 cards-container blurry-frame">
-                    <div class="section_header">
-                        <div class="f2">
-                            <img class="icon" src="./statics/icons/certifications.svg" alt="icon"><img class="chevron"
-                                src="./statics/icons/chevron.svg" alt="chevron">
-                        </div>
-                        <div id="section__title_certifications" class="section__title section-name"
-                            es="CERTIFICACIONES">
-                            CERTIFICATIONS
-                        </div>
-                    </div>
-                    <!-- CERTIFICATIONS CARDS -->
-                    <!-- <a href="https://drive.google.com/file/d/1lG7zXW3t8CspYtOvh8Ped1zb114NsvCU/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="section__card-N section__card "> 
+            <!-- CERTIFICATIONS CARDS -->
+            <!-- <a href="https://drive.google.com/file/d/1lG7zXW3t8CspYtOvh8Ped1zb114NsvCU/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="section__card-N section__card "> 
                         <div class=" card__certification">
                             <div class=" certification__institution">
                                 <img class="certification__institution-icon" src="./statics/icons/uci.svg"
@@ -104,43 +170,84 @@
                             </div>
                         </div>
                     </a> -->
-                    <a href="https://drive.google.com/file/d/1lG7zXW3t8CspYtOvh8Ped1zb114NsvCU/view?usp=sharing"
-                        target="_blank" rel="noopener noreferrer" class="section__card-N section__card ">
-                        <div class="card__experience-nDjm12">
-                            <div class="certification"><img class="certification__degree-icon"
-                                    src="./statics/icons/degree.svg" alt="certification__degree-icon">
-                                <div class="card-f1">
-                                    <div id="cert1" class="certification__degree-text l-bold"
-                                        es="Ingeniero en Ciencias Informáticas">Computer Science Engineer</div>
-                                    <div id="cert1_by" class="certification__company-name-xU1IDg s-light"
-                                        es="Por: Universidad de las Ciencias Informáticas">By: Computer Science
-                                        University</div>
-                                </div>
-                                <div class="certification__degree-date m-light">2022-12</div>
-                                <img class="icons-faded icon" src="./statics/icons/uci.svg"
-                                    alt="certification__institution-icon">
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://cert.efset.org/en/ERZgQK" target="_blank" rel="noopener noreferrer"
-                        class="section__card-N section__card ">
-                        <div class="card__experience-nDjm12">
-                            <div class="certification"><img class="certification__degree-icon"
-                                    src="./statics/icons/degree.svg" alt="certification__degree-icon">
-                                <div class="card-f1">
-                                    <div id="cert2" class="certification__degree-text l-bold"
-                                        es="MCER-B2<br>Nivel de Inglés">CEFR-B2<br>English Level</div>
-                                    <div id="cert2_by" class="certification__company-name-xU1IDg s-light"
-                                        es="Por: EF SET">By: EF SET</div>
-                                </div>
-                                <div class="certification__degree-date m-light">2025-02</div>
-                                <img class="icons-faded icon" src="./statics/icons/efset.svg"
-                                    alt="certification__institution-icon">
-                            </div>
-                        </div>
-                    </a>
+            <a
+              href="https://drive.google.com/file/d/1lG7zXW3t8CspYtOvh8Ped1zb114NsvCU/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__experience-nDjm12">
+                <div class="certification">
+                  <img
+                    class="certification__degree-icon"
+                    src="./statics/icons/degree.svg"
+                    alt="certification__degree-icon"
+                  />
+                  <div class="card-f1">
+                    <div
+                      id="cert1"
+                      class="certification__degree-text l-bold"
+                      es="Ingeniero en Ciencias Informáticas"
+                    >
+                      Computer Science Engineer
+                    </div>
+                    <div
+                      id="cert1_by"
+                      class="certification__company-name-xU1IDg s-light"
+                      es="Por: Universidad de las Ciencias Informáticas"
+                    >
+                      By: Computer Science University
+                    </div>
+                  </div>
+                  <div class="certification__degree-date m-light">2022-12</div>
+                  <img
+                    class="icons-faded icon"
+                    src="./statics/icons/uci.svg"
+                    alt="certification__institution-icon"
+                  />
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://cert.efset.org/en/ERZgQK"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__experience-nDjm12">
+                <div class="certification">
+                  <img
+                    class="certification__degree-icon"
+                    src="./statics/icons/degree.svg"
+                    alt="certification__degree-icon"
+                  />
+                  <div class="card-f1">
+                    <div
+                      id="cert2"
+                      class="certification__degree-text l-bold"
+                      es="MCER-B2<br>Nivel de Inglés"
+                    >
+                      CEFR-B2<br />English Level
+                    </div>
+                    <div
+                      id="cert2_by"
+                      class="certification__company-name-xU1IDg s-light"
+                      es="Por: EF SET"
+                    >
+                      By: EF SET
+                    </div>
+                  </div>
+                  <div class="certification__degree-date m-light">2025-02</div>
+                  <img
+                    class="icons-faded icon"
+                    src="./statics/icons/efset.svg"
+                    alt="certification__institution-icon"
+                  />
+                </div>
+              </div>
+            </a>
 
-                    <!-- <a href="https://drive.google.com/file/d/1ZCry2_N-KEkHlx_jKLcHVP1P8i6pT5eE/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="section__card-N section__card "> 
+            <!-- <a href="https://drive.google.com/file/d/1ZCry2_N-KEkHlx_jKLcHVP1P8i6pT5eE/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="section__card-N section__card "> 
                         <div class="card__certification">
                             <div class="certification__institution"><img class="certification__institution-icon"
                                     src="./statics/icons/desoft_logo.svg" alt="certification__institution-icon">
@@ -158,25 +265,46 @@
                             </div>
                         </div>
                     </a> -->
-                    <a href="https://drive.google.com/file/d/1ZCry2_N-KEkHlx_jKLcHVP1P8i6pT5eE/view?usp=sharing"
-                        target="_blank" rel="noopener noreferrer" class="section__card-N section__card ">
-                        <div class="card__experience-nDjm12">
-                            <div class="certification"><img class="certification__degree-icon"
-                                    src="./statics/icons/degree.svg" alt="certification__degree-icon">
-                                <div class="card-f1">
-                                    <div id="cert3" class="certification__degree-text l-bold"
-                                        es="Odoo Básico para Desarrolladores">Basic Odoo for Developers</div>
-                                    <div id="cert3_by" class="certification__company-name-xU1IDg s-light"
-                                        es="Por: Desoft">By: Desoft</div>
-                                </div>
-                                <div class="certification__degree-date m-light">2023-10</div>
-                                <img class="icons-faded icon" src="./statics/icons/desoft_logo.svg"
-                                    alt="certification__institution-icon">
-                            </div>
-                        </div>
-                    </a>
+            <a
+              href="https://drive.google.com/file/d/1ZCry2_N-KEkHlx_jKLcHVP1P8i6pT5eE/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__experience-nDjm12">
+                <div class="certification">
+                  <img
+                    class="certification__degree-icon"
+                    src="./statics/icons/degree.svg"
+                    alt="certification__degree-icon"
+                  />
+                  <div class="card-f1">
+                    <div
+                      id="cert3"
+                      class="certification__degree-text l-bold"
+                      es="Odoo Básico para Desarrolladores"
+                    >
+                      Basic Odoo for Developers
+                    </div>
+                    <div
+                      id="cert3_by"
+                      class="certification__company-name-xU1IDg s-light"
+                      es="Por: Desoft"
+                    >
+                      By: Desoft
+                    </div>
+                  </div>
+                  <div class="certification__degree-date m-light">2023-10</div>
+                  <img
+                    class="icons-faded icon"
+                    src="./statics/icons/desoft_logo.svg"
+                    alt="certification__institution-icon"
+                  />
+                </div>
+              </div>
+            </a>
 
-                    <!-- <a href="https://www.sololearn.com/certificates/CT-ZWLZHTND" target="_blank" rel="noopener noreferrer" class="section__card-N section__card">
+            <!-- <a href="https://www.sololearn.com/certificates/CT-ZWLZHTND" target="_blank" rel="noopener noreferrer" class="section__card-N section__card">
                         <div class="card__certification">
                             <div class="certification__institution">
                                 <img class="certification__institution-icon" src="./statics/icons/sololearn.svg"
@@ -196,42 +324,84 @@
                             </div>
                         </div>
                     </a> -->
-                    <a href="https://www.sololearn.com/certificates/CC-ZLMPJXRT" target="_blank"
-                        rel="noopener noreferrer" class="section__card-N section__card ">
-                        <div class="card__experience-nDjm12">
-                            <div class="certification"><img class="certification__degree-icon"
-                                    src="./statics/icons/degree.svg" alt="certification__degree-icon">
-                                <div class="card-f1">
-                                    <div id="cert4" class="certification__degree-text l-bold" es="Python Intermedio">
-                                        Python Intermediate</div>
-                                    <div id="cert4_by" class="certification__company-name-xU1IDg s-light"
-                                        es="Por: Sololearn">By: Sololearn</div>
-                                </div>
-                                <div class="certification__degree-date m-light">2025-02</div>
-                                <img class="icons-faded icon" src="./statics/icons/sololearn.svg"
-                                    alt="certification__institution-icon">
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.sololearn.com/certificates/CT-ZWLZHTND" target="_blank"
-                        rel="noopener noreferrer" class="section__card-N section__card ">
-                        <div class="card__experience-nDjm12">
-                            <div class="certification"><img class="certification__degree-icon"
-                                    src="./statics/icons/degree.svg" alt="certification__degree-icon">
-                                <div class="card-f1">
-                                    <div id="cert5" class="certification__degree-text l-bold"
-                                        es="Python para Principiantes">Python for Beginners</div>
-                                    <div id="cert5_by" class="certification__company-name-xU1IDg s-light"
-                                        es="Por: Sololearn">By: Sololearn</div>
-                                </div>
-                                <div class="certification__degree-date m-light">2022-11</div>
-                                <img class="icons-faded icon" src="./statics/icons/sololearn.svg"
-                                    alt="certification__institution-icon">
-                            </div>
-                        </div>
-                    </a>
+            <a
+              href="https://www.sololearn.com/certificates/CC-ZLMPJXRT"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__experience-nDjm12">
+                <div class="certification">
+                  <img
+                    class="certification__degree-icon"
+                    src="./statics/icons/degree.svg"
+                    alt="certification__degree-icon"
+                  />
+                  <div class="card-f1">
+                    <div
+                      id="cert4"
+                      class="certification__degree-text l-bold"
+                      es="Python Intermedio"
+                    >
+                      Python Intermediate
+                    </div>
+                    <div
+                      id="cert4_by"
+                      class="certification__company-name-xU1IDg s-light"
+                      es="Por: Sololearn"
+                    >
+                      By: Sololearn
+                    </div>
+                  </div>
+                  <div class="certification__degree-date m-light">2025-02</div>
+                  <img
+                    class="icons-faded icon"
+                    src="./statics/icons/sololearn.svg"
+                    alt="certification__institution-icon"
+                  />
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://www.sololearn.com/certificates/CT-ZWLZHTND"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__experience-nDjm12">
+                <div class="certification">
+                  <img
+                    class="certification__degree-icon"
+                    src="./statics/icons/degree.svg"
+                    alt="certification__degree-icon"
+                  />
+                  <div class="card-f1">
+                    <div
+                      id="cert5"
+                      class="certification__degree-text l-bold"
+                      es="Python para Principiantes"
+                    >
+                      Python for Beginners
+                    </div>
+                    <div
+                      id="cert5_by"
+                      class="certification__company-name-xU1IDg s-light"
+                      es="Por: Sololearn"
+                    >
+                      By: Sololearn
+                    </div>
+                  </div>
+                  <div class="certification__degree-date m-light">2022-11</div>
+                  <img
+                    class="icons-faded icon"
+                    src="./statics/icons/sololearn.svg"
+                    alt="certification__institution-icon"
+                  />
+                </div>
+              </div>
+            </a>
 
-                    <!-- <a href="https://www.sololearn.com/certificates/CC-HUJLGX0V" target="_blank" rel="noopener noreferrer" class="section__card-N section__card">
+            <!-- <a href="https://www.sololearn.com/certificates/CC-HUJLGX0V" target="_blank" rel="noopener noreferrer" class="section__card-N section__card">
                         <div class="card__certification">
                             <div class="certification__institution">
                                 <img class="certification__institution-icon" src="./statics/icons/sololearn.svg"
@@ -249,37 +419,70 @@
                             </div>
                         </div>
                     </a> -->
-                    <a href="https://www.sololearn.com/certificates/CC-HUJLGX0V" target="_blank"
-                        rel="noopener noreferrer" class="section__card-N section__card ">
-                        <div class="card__experience-nDjm12">
-                            <div class="certification"><img class="certification__degree-icon"
-                                    src="./statics/icons/degree.svg" alt="certification__degree-icon">
-                                <div class="card-f1">
-                                    <div id="cert6" class="certification__degree-text l-bold" es="HTML">HTML</div>
-                                    <div id="cert6_by" class="certification__company-name-xU1IDg s-light"
-                                        es="Por: Sololearn">By: Sololearn</div>
-                                </div>
-                                <div class="certification__degree-date m-light">2024-06</div>
-                                <img class="icons-faded icon" src="./statics/icons/sololearn.svg"
-                                    alt="certification__institution-icon">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- EXPERIENCE -->
-                <div class="col-12  cards-container blurry-frame">
-                    <div class="section_header">
-                        <div class="f2">
-                            <img class="icon" src="./statics/icons/experience.svg" alt="icon"><img class="chevron"
-                                src="./statics/icons/chevron.svg" alt="chevron">
-                        </div>
-                        <div id="section__title_experience" class="section__title section-name" es="EXPERIENCIA">
-                            EXPERIENCE
-                        </div>
+            <a
+              href="https://www.sololearn.com/certificates/CC-HUJLGX0V"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__experience-nDjm12">
+                <div class="certification">
+                  <img
+                    class="certification__degree-icon"
+                    src="./statics/icons/degree.svg"
+                    alt="certification__degree-icon"
+                  />
+                  <div class="card-f1">
+                    <div
+                      id="cert6"
+                      class="certification__degree-text l-bold"
+                      es="HTML"
+                    >
+                      HTML
                     </div>
-                    <!-- EXPERIENCE CARDS-->
-                    <!-- <a href="https://www.desoft.cu/es" target="_blank" rel="noopener noreferrer" class="section__card-N section__card "> 
+                    <div
+                      id="cert6_by"
+                      class="certification__company-name-xU1IDg s-light"
+                      es="Por: Sololearn"
+                    >
+                      By: Sololearn
+                    </div>
+                  </div>
+                  <div class="certification__degree-date m-light">2024-06</div>
+                  <img
+                    class="icons-faded icon"
+                    src="./statics/icons/sololearn.svg"
+                    alt="certification__institution-icon"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- EXPERIENCE -->
+          <div class="col-12 cards-container blurry-frame">
+            <div class="section_header">
+              <div class="f2">
+                <img
+                  class="icon"
+                  src="./statics/icons/experience.svg"
+                  alt="icon"
+                /><img
+                  class="chevron"
+                  src="./statics/icons/chevron.svg"
+                  alt="chevron"
+                />
+              </div>
+              <div
+                id="section__title_experience"
+                class="section__title section-name"
+                es="EXPERIENCIA"
+              >
+                EXPERIENCE
+              </div>
+            </div>
+            <!-- EXPERIENCE CARDS-->
+            <!-- <a href="https://www.desoft.cu/es" target="_blank" rel="noopener noreferrer" class="section__card-N section__card "> 
                         <div class="card__experience-nDjm12">
                             <div class="experience__company-zc9L1q"><img class="icons-xU1IDg icons"
                                     src="./statics/icons/desoft_logo.svg" alt="Icons">
@@ -294,395 +497,607 @@
                             </div>
                         </div>
                     </a> -->
-                    <a href="https://www.merchise.org/" target="_blank" rel="noopener noreferrer"
-                        class="section__card-N section__card ">
-                        <div class="card__experience-nDjm12">
-
-                            <div class="certification"><img class="certification__degree-icon"
-                                    src="./statics/icons/briefcase.svg" alt="certification__degree-icon">
-                                <div class="card-f1">
-                                    <div id="exp2" class="certification__degree-text l-bold" es="Desarrollador Odoo">
-                                        Odoo
-                                        Developer</div>
-                                    <div id="exp2_at" class="certification__company-name-xU1IDg s-light"
-                                        es="En: Merchise Autrement">
-                                        At: Merchise Autrement</div>
-                                </div>
-                                <div id="exp2_range" class="certification__degree-date m-light"
-                                    es="2024-11<br>Actualidad">
-                                    2024-11<br>Present</div>
-                                <img class="icons-faded icons" src="./statics/icons/merchise-autrement.svg" alt="Icons">
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.desoft.cu/es" target="_blank" rel="noopener noreferrer"
-                        class="section__card-N section__card ">
-                        <div class="card__experience-nDjm12">
-
-                            <div class="certification"><img class="certification__degree-icon"
-                                    src="./statics/icons/briefcase.svg" alt="certification__degree-icon">
-                                <div class="card-f1">
-                                    <div id="exp1" class="certification__degree-text l-bold" es="Desarrollador Odoo">
-                                        Odoo
-                                        Developer</div>
-                                    <div id="exp1_at" class="certification__company-name-xU1IDg s-light"
-                                        es="En: Desoft">At: Desoft</div>
-                                </div>
-                                <div id="exp1_range" class="certification__degree-date m-light"
-                                    es="2023-04<br>Actualidad">2023-04<br>Present</div>
-                                <img class="icons-faded icons" src="./statics/icons/desoft_logo.svg" alt="Icons">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row ">
-                <!-- SOME PROJECTS -->
-                <div class=" col-12 cards-container blurry-frame">
-                    <div class="section_header">
-                        <div class="f2">
-                            <img class="icon" src="./statics/icons/projects.svg" alt="icon"><img class="chevron"
-                                src="./statics/icons/chevron.svg" alt="chevron">
-                        </div>
-                        <div id="section__title_some_projects" class="section__title section-name"
-                            es="ALGUNOS PROYECTOS">
-                            SOME PROJECTS
-                        </div>
+            <a
+              href="https://www.merchise.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__experience-nDjm12">
+                <div class="certification">
+                  <img
+                    class="certification__degree-icon"
+                    src="./statics/icons/briefcase.svg"
+                    alt="certification__degree-icon"
+                  />
+                  <div class="card-f1">
+                    <div
+                      id="exp2"
+                      class="certification__degree-text l-bold"
+                      es="Desarrollador Odoo"
+                    >
+                      Odoo Developer
                     </div>
-                    <!-- PROJECTS CARDS-->
-                    <a href="https://drive.google.com/file/d/1SdOMWIAUr6D1OM9RgpXxX7VEAqn49b45/view?usp=sharing"
-                        target="_blank" rel="noopener noreferrer" class="section__card-N section__card">
-                        <div class="card__project">
-                            <div class="project__f1">
-                                <div class="project__image--frame">
-                                    <div class="project__image--overlay"></div>
-                                    <img class="project__image"
-                                        src="./statics/Biometric Fingerprints Virtual Centinel .webp"
-                                        alt="project__image">
-                                </div>
-                                <div class="project__f2">
-                                    <div class="project__f3">
-                                        <div id="project1" class="project__name valign-text-middle l-bold"
-                                            es="Centinela Virtual Biométrico">Biometric Virtual Sentinel</div><img
-                                            class="project__button" src="./statics/icons/link.svg"
-                                            alt="project__button">
-                                    </div>
-                                    <p id="project1_desc" class="project__description m-light"
-                                        es="Sistema de control de guardias por huellas digitales">System for guard
-                                        control using fingerprints.</p>
-                                </div>
-                            </div>
-                            <div class="project__techs">
-                                <article class="project__tech">
-                                    <div class="project__tech-text m-light">Python
-                                    </div>
-                                </article>
-                                <article class="project__tech">
-                                    <div class="project__tech-text m-light">Django
-                                    </div>
-                                </article>
-                                <article class="project__tech">
-                                    <div class="project__tech-text m-light">C++</div>
-                                </article>
-                                <article class="project__tech">
-                                    <div class="project__tech-text m-light">Arduino
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.figma.com/design/AoOLqJpUv7GAkFMlvdRjhe/Peetas-Mini-Spa?node-id=1-2&t=gaSDwWmJ23ni84Nd-1"
-                        target="_blank" rel="noopener noreferrer" class="section__card-N section__card">
-                        <div class="card__project">
-                            <div class="project__f1">
-                                <div class="project__image--frame">
-                                    <div class="project__image--overlay"></div>
-                                    <img class="project__image" src="./statics/Peeta's Mini Spa.webp"
-                                        alt="project__image">
-                                </div>
-                                <div class="project__f2">
-                                    <div class="project__f3">
-                                        <div id="project2" class="project__name valign-text-middle l-bold">Peeta’s Mini
-                                            Spa
-                                        </div><img class="project__button" src="./statics/icons/link.svg"
-                                            alt="project__button">
-                                    </div>
-                                    <p id="project2_desc" class="project__description m-light"
-                                        es="Software para administrar todo lo relacionado a un SPA">Software to manage
-                                        everything related to a spa.</p>
-                                </div>
-                            </div>
-                            <div class="project__techs">
-                                <article class="project__tech">
-                                    <div class="project__tech-text m-light">Odoo
-                                    </div>
-                                </article>
-                                <article class="project__tech">
-                                    <div class="project__tech-text m-light">Figma
-                                    </div>
-                                </article>
-                                <article class="project__tech">
-                                    <div id="project1_tech" class="project__tech-text m-light" es="en desarrollo...">
-                                        developing...</div>
-                                </article>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.fevexpo.cu/" target="_blank" rel="noopener noreferrer"
-                        class="section__card-N section__card">
-                        <div class="card__project">
-                            <div class="project__f1">
-                                <div class="project__image--frame">
-                                    <div class="project__image--overlay"></div>
-                                    <img class="project__image" src="./statics/Fevexpo-proj.webp" alt="project__image">
-                                </div>
-                                <div class="project__f2">
-                                    <div class="project__f3">
-                                        <div id="project3" class="project__name valign-text-middle l-bold">Fevexpo</div>
-                                        <img class="project__button" src="./statics/icons/link.svg"
-                                            alt="project__button">
-                                    </div>
-                                    <p id="project3_desc" class="project__description m-light"
-                                        es="Plataforma para ferias y eventos virtuales">Platform for fairs and virtual
-                                        events.</p>
-                                </div>
-                            </div>
-                            <div class="project__techs">
-                                <article class="project__tech">
-                                    <div class="project__tech-text m-light">Odoo
-                                    </div>
-                                </article>
-                                <article class="project__tech">
-                                    <div class="project__tech-text m-light">Python
-                                    </div>
-                                </article>
-                                <article class="project__tech">
-                                    <div class="project__tech-text m-light">JavaScript
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row ">
-                <!-- TECH STACK -->
-                <div class=" col-12 cards-container blurry-frame ">
-                    <div class="section_header">
-                        <div class="f2">
-                            <img class="icon" src="./statics/icons/stack.svg" alt="icon"><img class="chevron"
-                                src="./statics/icons/chevron.svg" alt="chevron">
-                        </div>
-                        <div id="section__title_tech_stack" class="section__title section-name" es="TECNOLOGÍAS">
-                            TECH STACK
-                        </div>
+                    <div
+                      id="exp2_at"
+                      class="certification__company-name-xU1IDg s-light"
+                      es="En: Merchise Autrement"
+                    >
+                      At: Merchise Autrement
                     </div>
-                    <!-- TECH STACK CARDS-->
-                    <a href=" https://www.icloud.com/notes/08b4sjB5oaNlvZpmJ3zYFR8mQ" target="_blank"
-                        rel="noopener noreferrer" class="section__card-Techs section__card ">
-                        <article class="tech-odoo tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/odoo.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Odoo
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-python tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/Python.svg" alt="tech__icon">
-                                    <div class="tech__name xl-reg">Python
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-figma tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/Figma.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Figma
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-docker tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/Docker.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Docker
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-git tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/git.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Git
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-vsc tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/vsc.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Vsc
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-js tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/JS.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Js
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-css tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/CSS.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Css
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-html tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/HTML.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Html
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-bootstrap tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/bootstrap.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Bootstrap
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-qweb tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/qWeb.svg" alt="Icons">
-                                    <div class="tech__name xl-reg"> Qweb
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-scss tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/Sass.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Scss
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-jquery tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/jQuery.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">JQuery
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="tech-less tech">
-                            <div class="tech__back">
-                                <div class="tech__f1">
-                                    <img class="icon" src="./statics/icons/less.svg" alt="Icons">
-                                    <div class="tech__name xl-reg">Less
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
+                  </div>
+                  <div
+                    id="exp2_range"
+                    class="certification__degree-date m-light"
+                    es="2024-11<br>Actualidad"
+                  >
+                    2024-11<br />Present
+                  </div>
+                  <img
+                    class="icons-faded icons"
+                    src="./statics/icons/merchise-autrement.svg"
+                    alt="Icons"
+                  />
                 </div>
-            </div>
-            <div class="row">
-                <!-- LANGUAGES -->
-                <div class=" col-12 cards-container blurry-frame">
-                    <div class="section_header">
-                        <div class="f2">
-                            <img class="icon" src="./statics/icons/language.svg" alt="icon"><img class="chevron"
-                                src="./statics/icons/chevron.svg" alt="chevron">
-                        </div>
-                        <div id="section__title_languages" class="section__title section-name" es="IDIOMAS">
-                            LANGUAGES
-                        </div>
+              </div>
+            </a>
+            <a
+              href="https://www.desoft.cu/es"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__experience-nDjm12">
+                <div class="certification">
+                  <img
+                    class="certification__degree-icon"
+                    src="./statics/icons/briefcase.svg"
+                    alt="certification__degree-icon"
+                  />
+                  <div class="card-f1">
+                    <div
+                      id="exp1"
+                      class="certification__degree-text l-bold"
+                      es="Desarrollador Odoo"
+                    >
+                      Odoo Developer
                     </div>
-                    <!-- LANGUAGE CARDS-->
-                    <a target="_blank" rel="noopener noreferrer" class="section__card-Techs section__card ">
-
-                        <article class="language__back">
-                            <div class="language__f1">
-                                <div class="icon" alt="Icons"></div>
-                                <div id="lang1" class="language__name xl-reg" es="Español">Spanish</div>
-                                <div class="language__f2">
-                                    <div id="lang1_lv" class="language__level m-reg" es="Nativo">Native</div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="language__back">
-                            <div class="language__f1">
-                                <div class="icon" alt="Icons"></div>
-                                <div id="lang2" class="language__name xl-reg" es="Inglés">English</div>
-                                <div class="language__f2">
-                                    <div id="lang2_lv" class="language__level m-reg" es="Niv. B2">Lv. B2</div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
+                    <div
+                      id="exp1_at"
+                      class="certification__company-name-xU1IDg s-light"
+                      es="En: Desoft"
+                    >
+                      At: Desoft
+                    </div>
+                  </div>
+                  <div
+                    id="exp1_range"
+                    class="certification__degree-date m-light"
+                    es="2023-04<br>Actualidad"
+                  >
+                    2023-04<br />Present
+                  </div>
+                  <img
+                    class="icons-faded icons"
+                    src="./statics/icons/desoft_logo.svg"
+                    alt="Icons"
+                  />
                 </div>
-            </div>
+              </div>
+            </a>
+          </div>
         </div>
-
+        <div class="row">
+          <!-- SOME PROJECTS -->
+          <div class="col-12 cards-container blurry-frame">
+            <div class="section_header">
+              <div class="f2">
+                <img
+                  class="icon"
+                  src="./statics/icons/projects.svg"
+                  alt="icon"
+                /><img
+                  class="chevron"
+                  src="./statics/icons/chevron.svg"
+                  alt="chevron"
+                />
+              </div>
+              <div
+                id="section__title_some_projects"
+                class="section__title section-name"
+                es="ALGUNOS PROYECTOS"
+              >
+                SOME PROJECTS
+              </div>
+            </div>
+            <!-- PROJECTS CARDS-->
+            <a
+              href="https://drive.google.com/file/d/1SdOMWIAUr6D1OM9RgpXxX7VEAqn49b45/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__project">
+                <div class="project__f1">
+                  <div class="project__image--frame">
+                    <div class="project__image--overlay"></div>
+                    <img
+                      class="project__image"
+                      src="./statics/Biometric Fingerprints Virtual Centinel .webp"
+                      alt="project__image"
+                    />
+                  </div>
+                  <div class="project__f2">
+                    <div class="project__f3">
+                      <div
+                        id="project1"
+                        class="project__name valign-text-middle l-bold"
+                        es="Centinela Virtual Biométrico"
+                      >
+                        Biometric Virtual Sentinel
+                      </div>
+                      <img
+                        class="project__button"
+                        src="./statics/icons/link.svg"
+                        alt="project__button"
+                      />
+                    </div>
+                    <p
+                      id="project1_desc"
+                      class="project__description m-light"
+                      es="Sistema de control de guardias por huellas digitales"
+                    >
+                      System for guard control using fingerprints.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__techs">
+                  <article class="project__tech">
+                    <div class="project__tech-text m-light">Python</div>
+                  </article>
+                  <article class="project__tech">
+                    <div class="project__tech-text m-light">Django</div>
+                  </article>
+                  <article class="project__tech">
+                    <div class="project__tech-text m-light">C++</div>
+                  </article>
+                  <article class="project__tech">
+                    <div class="project__tech-text m-light">Arduino</div>
+                  </article>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://www.figma.com/design/AoOLqJpUv7GAkFMlvdRjhe/Peetas-Mini-Spa?node-id=1-2&t=gaSDwWmJ23ni84Nd-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__project">
+                <div class="project__f1">
+                  <div class="project__image--frame">
+                    <div class="project__image--overlay"></div>
+                    <img
+                      class="project__image"
+                      src="./statics/Peeta's Mini Spa.webp"
+                      alt="project__image"
+                    />
+                  </div>
+                  <div class="project__f2">
+                    <div class="project__f3">
+                      <div
+                        id="project2"
+                        class="project__name valign-text-middle l-bold"
+                      >
+                        Peeta’s Mini Spa
+                      </div>
+                      <img
+                        class="project__button"
+                        src="./statics/icons/link.svg"
+                        alt="project__button"
+                      />
+                    </div>
+                    <p
+                      id="project2_desc"
+                      class="project__description m-light"
+                      es="Software para administrar todo lo relacionado a un SPA"
+                    >
+                      Software to manage everything related to a spa.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__techs">
+                  <article class="project__tech">
+                    <div class="project__tech-text m-light">Odoo</div>
+                  </article>
+                  <article class="project__tech">
+                    <div class="project__tech-text m-light">Figma</div>
+                  </article>
+                  <article class="project__tech">
+                    <div
+                      id="project1_tech"
+                      class="project__tech-text m-light"
+                      es="en desarrollo..."
+                    >
+                      developing...
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://www.fevexpo.cu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-N section__card"
+            >
+              <div class="card__project">
+                <div class="project__f1">
+                  <div class="project__image--frame">
+                    <div class="project__image--overlay"></div>
+                    <img
+                      class="project__image"
+                      src="./statics/Fevexpo-proj.webp"
+                      alt="project__image"
+                    />
+                  </div>
+                  <div class="project__f2">
+                    <div class="project__f3">
+                      <div
+                        id="project3"
+                        class="project__name valign-text-middle l-bold"
+                      >
+                        Fevexpo
+                      </div>
+                      <img
+                        class="project__button"
+                        src="./statics/icons/link.svg"
+                        alt="project__button"
+                      />
+                    </div>
+                    <p
+                      id="project3_desc"
+                      class="project__description m-light"
+                      es="Plataforma para ferias y eventos virtuales"
+                    >
+                      Platform for fairs and virtual events.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__techs">
+                  <article class="project__tech">
+                    <div class="project__tech-text m-light">Odoo</div>
+                  </article>
+                  <article class="project__tech">
+                    <div class="project__tech-text m-light">Python</div>
+                  </article>
+                  <article class="project__tech">
+                    <div class="project__tech-text m-light">JavaScript</div>
+                  </article>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- TECH STACK -->
+          <div class="col-12 cards-container blurry-frame">
+            <div class="section_header">
+              <div class="f2">
+                <img
+                  class="icon"
+                  src="./statics/icons/stack.svg"
+                  alt="icon"
+                /><img
+                  class="chevron"
+                  src="./statics/icons/chevron.svg"
+                  alt="chevron"
+                />
+              </div>
+              <div
+                id="section__title_tech_stack"
+                class="section__title section-name"
+                es="TECNOLOGÍAS"
+              >
+                TECH STACK
+              </div>
+            </div>
+            <!-- TECH STACK CARDS-->
+            <a
+              href=" https://www.icloud.com/notes/08b4sjB5oaNlvZpmJ3zYFR8mQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-Techs section__card"
+            >
+              <article class="tech-odoo tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/odoo.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Odoo</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-python tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/Python.svg"
+                      alt="tech__icon"
+                    />
+                    <div class="tech__name xl-reg">Python</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-figma tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/Figma.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Figma</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-docker tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/Docker.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Docker</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-git tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/git.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Git</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-vsc tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/vsc.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Vsc</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-js tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/JS.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Js</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-css tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/CSS.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Css</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-html tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/HTML.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Html</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-bootstrap tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/bootstrap.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Bootstrap</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-qweb tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/qWeb.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Qweb</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-scss tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/Sass.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Scss</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-jquery tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/jQuery.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">JQuery</div>
+                  </div>
+                </div>
+              </article>
+              <article class="tech-less tech">
+                <div class="tech__back">
+                  <div class="tech__f1">
+                    <img
+                      class="icon"
+                      src="./statics/icons/less.svg"
+                      alt="Icons"
+                    />
+                    <div class="tech__name xl-reg">Less</div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- LANGUAGES -->
+          <div class="col-12 cards-container blurry-frame">
+            <div class="section_header">
+              <div class="f2">
+                <img
+                  class="icon"
+                  src="./statics/icons/language.svg"
+                  alt="icon"
+                /><img
+                  class="chevron"
+                  src="./statics/icons/chevron.svg"
+                  alt="chevron"
+                />
+              </div>
+              <div
+                id="section__title_languages"
+                class="section__title section-name"
+                es="IDIOMAS"
+              >
+                LANGUAGES
+              </div>
+            </div>
+            <!-- LANGUAGE CARDS-->
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              class="section__card-Techs section__card"
+            >
+              <article class="language__back">
+                <div class="language__f1">
+                  <div class="icon" alt="Icons"></div>
+                  <div id="lang1" class="language__name xl-reg" es="Español">
+                    Spanish
+                  </div>
+                  <div class="language__f2">
+                    <div
+                      id="lang1_lv"
+                      class="language__level m-reg"
+                      es="Nativo"
+                    >
+                      Native
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="language__back">
+                <div class="language__f1">
+                  <div class="icon" alt="Icons"></div>
+                  <div id="lang2" class="language__name xl-reg" es="Inglés">
+                    English
+                  </div>
+                  <div class="language__f2">
+                    <div
+                      id="lang2_lv"
+                      class="language__level m-reg"
+                      es="Niv. B2"
+                    >
+                      Lv. B2
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
     <footer class="footer">
-        <p id="footer" class="footer__text m-reg"
-            es='<span class="span1-tCK2lO"> Acerca de este sitio web: </span><span class="span2-tCK2lO m-reg">Diseñado con Figma y construido con HTML/CSS/JS.</span>'>
-            <span class="span1-tCK2lO"> About this website: </span>
-            <span class="span0-tCK2lO m-reg">Designed with Figma and built with HTML/CSS/JS.</span>
-        </p>
-
+      <p
+        id="footer"
+        class="footer__text m-reg"
+        es='<span class="span1-tCK2lO"> Acerca de este sitio web: </span><span class="span2-tCK2lO m-reg">Diseñado con Figma y construido con HTML/CSS/JS.</span>'
+      >
+        <span class="span1-tCK2lO"> About this website: </span>
+        <span class="span0-tCK2lO m-reg"
+          >Designed with Figma and built with HTML/CSS/JS.</span
+        >
+      </p>
     </footer>
 
-    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="confirmationModalLabel">Confirmación</h5>
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button> -->
-                </div>
-                <div class="modal-body">
-                    Ud está a punto de acceder al siguiente enlace:
-                    <p id="modalLink" class="break-word fw-bold mt-2"></p>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button> -->
-                    <button type="button" class="btn btn-primary" id="continueButton">Continuar</button>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="confirmationModal"
+      tabindex="-1"
+      aria-labelledby="confirmationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmationModalLabel">
+              Confirmación
+            </h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button> -->
+          </div>
+          <div class="modal-body">
+            <p
+              id="confirmation_message"
+              es="Ud está a punto de acceder al siguiente enlace:"
+            >
+              You are about to access the following link:
+            </p>
+            <p id="modalLink" class="break-word fw-bold mt-2"></p>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button> -->
+            <button type="button" class="btn btn-primary" id="continueButton">
+              Continuar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-</body>
-
+  </body>
 </html>
