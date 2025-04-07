@@ -1,0 +1,71 @@
+Habilidades Técnicas Principales
+
+- Desarrollo de módulos personalizados
+Creación de modelos, vistas y menús personalizados
+Herencia de modelos y vistas existentes
+P Desarrollo de wizards y asistentes personalizados
+
+
+- Personalización del backend
+Campos computados y onchange
+
+- Personalización del frontend
+P QWeb templates para informes PDF
+P Vistas Kanban personalizadas
+P Diseño de dashboards con gráficos
+
+- Migración y despliegue
+P Migración de versiones (Odoo 13 → 16+)
+P Docker y configuración de servidores
+P CI/CD para despliegues automatizados
+
+Habilidades Complementarias
+P Testing y Depuración
+P Pruebas unitarias (Python unittest)
+P Depuración con logs y herramientas Odoo
+
+Gestión de proyectos
+P Metodologías ágiles (Scrum/Kanban)
+P Documentación técnica y funcional
+
+
+Habilidades Técnicas Frontend Especializadas
+- Personalización de Interfaces
+Desarrollo de vistas personalizadas
+Creación y modificación de vistas Lista, Formulario y Kanban
+Uso avanzado de XML para estructurar interfaces
+P Diseño de dashboards interactivos
+P Componentes Web con OWL
+P Desarrollo de widgets personalizados
+P Creación de componentes reactivos
+P Integración de librerías JavaScript externas
+P Experiencia de Usuario (UX)
+P Mejora de flujos de trabajo existentes
+P Diseño de interfaces intuitivas
+P Optimización de tiempos de carga
+
+- Herramientas Frontend
+Chrome DevTools para depuración
+P Webpack (para módulos personalizados)
+Responsive design para móviles
+
+Habilidades de Personalización Visual
+P Informes y PDFs
+P Diseño de reportes con QWeb PDF
+P Plantillas personalizadas para facturas
+P Gráficos y elementos visuales avanzados
+P Temas y Estilos
+P Personalización del tema principal
+P Creación de themes personalizados
+P Adaptación de colores y layouts
+
+- Habilidades Complementarias
+Integraciones Frontend
+P Conexión con APIs de terceros
+P Widgets para servicios externos (Google Maps, etc.)
+P Componentes para redes sociales
+
+- Optimización
+P Mejora de rendimiento frontend
+P Carga lazy de componentes
+P Gestión eficiente de assets
