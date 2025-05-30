@@ -413,6 +413,16 @@
         }
 
         .modal-blurry-down {
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          padding: .75rem;
+          border-top: 1px solid #dee2e6;
+
           -webkit-backdrop-filter: var(--glas8);
           backdrop-filter: var(--glas8);
           background-color: rgba(255, 255, 255, 0.2) !important;
