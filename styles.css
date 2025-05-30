@@ -404,6 +404,39 @@
           padding: 16px 16px 32px 16px;
         }
 
+        .modal-blurry-top {
+          -webkit-backdrop-filter: var(--glas8);
+          backdrop-filter: var(--glas8);
+          background-color: rgba(255, 255, 255, 0.6) !important;
+          padding: 16px 16px 0px 16px;
+          border-radius: 20px 20px 0px 0px;
+        }
+
+        .modal-blurry-down {
+          -webkit-backdrop-filter: var(--glas8);
+          backdrop-filter: var(--glas8);
+          background-color: rgba(255, 255, 255, 0.2) !important;
+          padding: 0px 16px 32px 16px;
+          border-radius: 0px 0px 20px 20px !important;
+        }
+
+        .my-modal-content {
+          position: relative;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 100%;
+          pointer-events: auto;
+          background-color: #ffffff02;
+          background-clip: padding-box;
+          border: 1px solid rgba(0, 0, 0, .2);
+          outline: 0;
+          border-radius: 20px !important;
+        }
+
+
+
         .cards-container {
           display: flex;
           flex-wrap: wrap;
@@ -471,7 +504,7 @@
           width: fit-content;
         }
 
-        .main .section__card {
+        .section__card {
           -webkit-backdrop-filter: var(--glas18);
           backdrop-filter: var(--glas18);
           background-color: var(--transparent-white80);
